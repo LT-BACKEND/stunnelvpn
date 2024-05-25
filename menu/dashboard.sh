@@ -1,5 +1,6 @@
 #!/bin/bash
 # =========================================
+clear
 vlx=$(grep -c -E "^#& " "/etc/xray/config.json")
 let vla=$vlx/2
 vmc=$(grep -c -E "^### " "/etc/xray/config.json")
@@ -10,8 +11,10 @@ trx=$(grep -c -E "^#! " "/etc/xray/config.json")
 let tra=$trx/2
 ssx=$(grep -c -E "^## " "/etc/xray/config.json")
 let ssa=$ssx/2
-COLOR1='\033[0;35m'
-COLOR2='\033[0;39m'
+
+nob=$(noobzvpns --info-all-user | grep -i "username" | wc -l)
+noob=$(cat /etc/noobzvpns/.noobzvpns.db | grep "#nob#" | wc -l)
+
 clear
 # // Exporting Language to UTF-8
 export LC_ALL='en_US.UTF-8'
@@ -20,42 +23,43 @@ export LANGUAGE='en_US.UTF-8'
 export LC_CTYPE='en_US.utf8'
 
 # // Export Color & Information
-export RED='\033[0;31m'
-export GREEN='\033[0;36m'
-export YELLOW='\033[0;33m'
-export BLUE='\033[0;34m'
-export PURPLE='\033[0;35m'
-export CYAN='\033[0;35m'
-export LIGHT='\033[0;37m'
+#export RED='\033[0;31m'
+#export GREEN='\033[0;36m'
+#export YELLOW='\033[0;33m'
+#export BLUE='\033[0;34m'
+#export PURPLE='\033[0;35m'
+#export CYAN='\033[0;35m'
+#export LIGHT='\033[0;37m'
 export NC='\033[0m'
 
 # // Export Banner Status Information
-export EROR="[${RED} EROR \e[0m]"
-export INFO="[\e[34;1m INFO \e[0m]"
-export OKEY="[\e[33;1m OKEY \e[0m]"
-export PENDING="[\e[34;1m PENDING \e[0m]"
-export SEND="[\e[34;1m SEND \e[0m]"
-export RECEIVE="[\e[34;1m RECEIVE \e[0m]"
+#export EROR="[${RED} EROR \e[0m]"
+#export INFO="[\e[34;1m INFO \e[0m]"
+#export OKEY="[\e[33;1m OKEY \e[0m]"
+#export PENDING="[\e[34;1m PENDING \e[0m]"
+#export SEND="[\e[34;1m SEND \e[0m]"
+#export RECEIVE="[\e[34;1m RECEIVE \e[0m]"
 
 # // Export Align
-export BOLD="\e[1m"
-export WARNING="${RED}\e[5m"
-export UNDERLINE="\e[4m"
+#export BOLD="\e[1m"
+#export WARNING="${RED}\e[5m"
+#export UNDERLINE="\e[4m"
 
 # // Exporting URL Host
-export Server_URL="autosc.me/aio"
-export Server_Port="443"
-export Server_IP="underfined"
-export Script_Mode="Stable"
-export Auther="XdrgVPN"
+#export Server_URL="autosc.me/aio"
+#export Server_Port="443"
+#export Server_IP="underfined"
+#export Script_Mode="Stable"
+#export Auther="XdrgVPN"
 # Getting
-echo "sedang memverifkasi"
+#echo "sedang memverifkasi"
 MYIP=$(wget -qO- ipinfo.io/ip);
 CEKEXPIRED () {
     today=$(date -d +1day +%Y-%m-%d)
     Exp1=$(curl -sS https://raw.githubusercontent.com/LT-BACKEND/REGISTER/main/IPVPS | grep $MYIP | awk '{print $3}')
     if [[ $today < $Exp1 ]]; then
-echo -e "verifikasi IP di terima"
+echo -e ""
+clear
     else
 echo -e "\e[31manda di tolak!\e[0m"
     exit 
@@ -76,16 +80,16 @@ fi
 
 IZIN=$(curl -sS https://raw.githubusercontent.com/LT-BACKEND/REGISTER/main/IPVPS | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
-echo "status akun masih aktif" 
+#echo "status akun masih aktif"
 CEKEXPIRED 
 else
 echo -e "\e[31mSCRIPT ANDA EXPIRED!\e[0m"
 exit 0
 fi
 # status
-rm -rf /root/status
-wget -q -O /root/status "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/statushariini" 
-
+#rm -rf /root/status
+#wget -q -O /root/status "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/statushariini" 
+clear
 today=`date -d "0 days" +"%Y-%m-%d"`
 Exp2=$(curl -sS https://raw.githubusercontent.com/LT-BACKEND/REGISTER/main/IPVPS | grep $MYIP | awk '{print $3}')
 if [ "$Exp2" == "lifetime" ]; then
@@ -98,8 +102,8 @@ left=$(((d1 - d2) / 86400))
 
 
  
-rm cybervpn.zip
-rm -rf cybervpn.zip
+#rm cybervpn.zip
+#rm -rf cybervpn.zip
 
 datediff() {
     d1=$(date -d "$1" +%s)
@@ -114,123 +118,92 @@ if [ "${EUID}" -ne 0 ]; then
                 echo -e "${EROR} Please Run This Script As Root User !"
                 exit 1
 fi
-tomem="$(free | awk '{print $2}' | head -2 | tail -n 1 )"
-usmem="$(free | awk '{print $3}' | head -2 | tail -n 1 )"
-cpu1="$(mpstat | awk '{print $4}' | head -4 |tail -n 1)"
-cpu2="$(mpstat | awk '{print $6}' | head -4 |tail -n 1)"
+#tomem="$(free | awk '{print $2}' | head -2 | tail -n 1 )"
+#usmem="$(free | awk '{print $3}' | head -2 | tail -n 1 )"
+#cpu1="$(mpstat | awk '{print $4}' | head -4 |tail -n 1)"
+#cpu2="$(mpstat | awk '{print $6}' | head -4 |tail -n 1)"
 
 #update
-wget -q -O updatsc.sh "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/updateyes.sh" && chmod +x updatsc.sh && ./updatsc.sh 
+#wget -q -O updatsc.sh "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/updateyes.sh" && chmod +x updatsc.sh && ./updatsc.sh 
 
 # // Exporting IP Address
 export MYIP=$( curl -s https://ipinfo.io/ip/ )
 Name=$(curl -sS https://raw.githubusercontent.com/LT-BACKEND/REGISTER/main/IPVPS | grep $MYIP | awk '{print $2}')
 Exp=$(curl -sS https://raw.githubusercontent.com/LT-BACKEND/REGISTER/main/IPVPS | grep $MYIP | awk '{print $3}')
-
+clear
 # // nginx
 nginx=$( systemctl status nginx | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $nginx == "running" ]]; then
-    status_nginx="✅ ok"
+    status_nginx="\e[92;1mONLINE\e[0m"
 else
-    status_nginx="❌ died"
+    status_nginx="\e[91;1mOFLINE\e[0m"
 fi
 # // 
 xray=$( systemctl status xray | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $xray == "running" ]]; then
-    status_xray="✅ ok"
+    status_xray="\e[92;1mONLINE\e[0m"
 else
-    status_xray="❌ died"
+    status_xray="\e[91;1mOFLINE\e[0m"
 fi
 
 # // SSH Websocket Proxy
 ssh=$(/etc/init.d/ssh status | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 if [[ $xray == "running" ]]; then
-    status_ssh="✅ ok"
+    status_ssh="\e[92;1mONLINE\e[0m"
 else
-    status_ssh="❌ died"
+    status_ssh="\e[91;1mOFLINE\e[0m"
 fi
 
 ## // ddos
 dos=$( systemctl status ddos | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $dos == "running" ]]; then
-    status_dos="✅ ok"
+    status_dos="\e[37;1m[\e[92;1mACTIVATED\e[37;1m]\e[0m"
 else
-    status_dos="❌ died"
+    status_dos="\e[91;1mOFLINE\e[0m"
 fi
 
 
 ## // fail2ban
 fail2ban=$( systemctl status fail2ban | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $fail2ban == "running" ]]; then
-    status_fail2ban="✅ ok"
+    status_fail2ban="\e[92;1mONLINE\e[0m"
 else
-    status_fail2ban="❌ died"
+    status_fail2ban="\e[91;1mOFLINE\e[0m"
 fi
 
 
 ## // net
 netfilter=$( systemctl status netfilter-persistent | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $netfilter == "exited" ]]; then
-    status_net="✅ ok"
+    status_net="\e[92;1mONLINE\e[0m"
 else
-    status_net="❌ died"
+    status_net="\e[91;1mOFLINE\e[0m"
 fi
-
-
-
-
+#ttoday="$(vnstat | grep today | awk '{print $8" "substr ($9, 1, 3)}' | head -1)"
+#tmon="$(vnstat -m | grep `date +%G-%m` | awk '{print $8" "substr ($9, 1 ,3)}' | head -1)"
+#bot
 clear
-ttoday="$(vnstat | grep today | awk '{print $8" "substr ($9, 1, 3)}' | head -1)"
-tmon="$(vnstat -m | grep `date +%G-%m` | awk '{print $8" "substr ($9, 1 ,3)}' | head -1)"
-bot
-clear
-echo -e "\e[33;1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m\e[0m"
-echo -e "\e[33;1m| \E[44;1;39m    °LUNATIC TUNNELING SCRIPTED VPN°        \E[0m|"
-echo -e "\e[33;1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m\e[0m"
-echo -e "• Server Uptime       = $( uptime -p  | cut -d " " -f 2-10000 ) "
-echo -e "• Current Time        = $( date -d "0 days" +"%d-%m-%Y | %X" )"
-echo -e "• Current Domain      = $( cat /etc/xray/domain )"
-echo -e "• Server IP           = $MYIP"
-echo -e "• ISP                 = $(curl -s ipinfo.io/org | cut -d " " -f 2-10 )\e[0m"
-echo -e "• Status Hari ini     = $(cat /root/status)\e[0m"
-echo -e "\e[33;1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m\e[0m"
 echo -e "\e[33;1m┌──────────────────────────────────────────────────┐\e[0m"
-echo -e " \e[34;1m• Today\e[0m  : [$ttoday] \e[34;1m• Monthly\e[0m: [$tmon]"
+echo -e "\e[33;1m│ \E[44;37;1m       °LUNATIC TUNNELING SCRIPTED VPN°         \E[0m \e[33;1m│\e[0m"
+echo -e "\e[33;1m└──────────────────────────────────────────────────┘\e[0m"
+echo -e "\e[33;1m                     ${status_dos}                        \e[0m"
+echo -e "\e[33;1m                     \e[37;1m $(((d1 - d2) / 86400))\e[35;1m.Left\e[0m"            
+echo -e "\e[33;1m┌──────────────────────────────────────────────────┐\e[0m"
+echo -e "\e[33;1m│•\e[31;1m Uptime:\e[32;1m $( uptime -p  | cut -d " " -f 2-10000 ) "
+echo -e "\e[33;1m│•\e[31;1m Time:\e[32;1m $( date -d "0 days" +"%d-%m-%Y | %X" )"
+echo -e "\e[33;1m│•\e[31;1m Domain:\e[32;1m $( cat /etc/xray/domain )"
+echo -e "\e[33;1m│•\e[31;1m Ipvps:\e[32;1m $(wget -qO- ipinfo.io/ip)"
+echo -e "\e[33;1m│•\e[31;1m Isp:\e[32;1m $(curl -s ipinfo.io/org | cut -d " " -f 2-10 )\e[0m"
 echo -e "\e[33;1m└──────────────────────────────────────────────────┘\e[0m"
 echo -e "\e[33;1m┌──────────────────────────────────────────────────┐\e[0m"
-echo -e "             \e[34;1m SSH WebSocket\e[0m: ${status_ssh}"
-echo -e "             \e[34;1m XRAY\e[0m         : ${status_xray}"
-echo -e "             \e[34;1m NGINX \e[0m       : ${status_nginx}"
-echo -e "             \e[34;1m Firewall \e[0m    : ${status_net}"
-echo -e "             \e[34;1m Fail2ban \e[0m    : ${status_fail2ban}"
-echo -e "             \e[34;1m iptables \e[0m    : ${status_net}"
-echo -e "             \e[34;1m Anti DDoS \e[0m   : ${status_dos}"
+echo -e "\e[33;1m│\e[34;1m   SSH : ${status_ssh} \e[34;1m  XRAY : ${status_xray} \e[34;1m  NGINX : ${status_nginx}  \e[33;1m│\e[0m"
 echo -e "\e[33;1m└──────────────────────────────────────────────────┘\e[0m"
+echo -e "\e[33;1m   \e[37mSSHOPENVPN : $ssh1  \e[37mSHADOWSOCKS : $ssa  \e[37mNOOBZVPN : $noob \e[0m"
+echo -e "\e[33;1m           \e[37mVMESS : $vma  \e[37mVLESS : $vla  \e[37mTROJAN : $tra \e[0m"
 echo -e "\e[33;1m┌──────────────────────────────────────────────────┐\e[0m"
-echo -e "\e[33;1m│  \033[0m ${BOLD}\e[34;1mSSH     VMESS     VLESS   TROJAN   SHADOWSOCKS\e[0m  $COLOR1"
-echo -e "\e[33;1m│  \033[0m ${Blue} $ssh1        $vma         $vla       $tra           $ssa   \e[0m"
+echo -e "\e[33;1m│              \e[4;37mAcces\e[0m \e[4;37mUse\e[0m \e[4;32mMenu\e[0m \e[4;37mCommand\e[0m              \e[33;1m│\e[0m"
 echo -e "\e[33;1m└──────────────────────────────────────────────────┘\e[0m"
-echo -e "\e[33;1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\e[0m"
-echo -e "\E[39;1;92m                ⇱ MENU SERVICE ⇲                \E[0m"
-echo -e "\e[33;1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\e[0m"
-echo -e "\e[33;1m┌──────────────────────────────────────────────────┐\e[0m"
-echo -e " ${CYAN}[${BIWhite}01${BICyan}]${RED} •\e[0m ${CYAN}SSH/CLOUDFRONT  \e[0m  ${CYAN}[${BIWhite}06${BICyan}]${RED} • \e[0m${CYAN}TROJAN MENU\e[0m"
-echo -e " ${CYAN}[${BIWhite}02${BICyan}]${RED} •\e[0m ${CYAN}SSH UDP MENU    \e[0m  ${CYAN}[${BIWhite}07${BICyan}]${RED} • \e[0m${CYAN}IPSEC L2TP & PPTP \e[0m"
-echo -e " ${CYAN}[${BIWhite}03${BICyan}]${RED} •\e[0m ${CYAN}VMESS MENU      \e[0m  ${CYAN}[${BIWhite}08${BICyan}]${RED} • \e[0m${CYAN}INFO RUNNING \e[0m"
-echo -e " ${CYAN}[${BIWhite}04${BICyan}]${RED} •\e[0m ${CYAN}VLESS MENU      \e[0m  ${CYAN}[${BIWhite}09${BICyan}]${RED} • \e[0m${CYAN}TRIAL GENERATOR \e[0m"
-echo -e " ${CYAN}[${BIWhite}05${BICyan}]${RED} •\e[0m ${CYAN}S-SOCK MENU     \e[0m  ${CYAN}[${BIWhite}10${BICyan}]${RED} • \e[0m${CYAN}DDOS PROTECTION \e[0m" 
-echo -e "\e[33;1m└──────────────────────────────────────────────────┘\e[0m"
-echo -e "\e[33;1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\e[0m"
-echo -e "\e[33;1m|\E[44;1;39m               Silahkan Ketik Menu                 \E[0m|"
-echo -e "\e[33;1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\e[0m"
-echo -e "\e[33;1m┌──────────────────────────────────────────────────┐\e[0m"
-echo -e "\e[33;1m│ ${BOLD}${LIGHT}Client    = $Name                            \e[0m"
-echo -e "\e[33;1m│ ${BOLD}${LIGHT}Expired   = $Exp                             \e[0m"
-echo -e "\e[33;1m│ ${BOLD}${LIGHT}remaining = \e[34;1m$left Days              \e[0m"
-echo -e "\e[33;1m│ ${BOLD}${LIGHT}Developer = LUNATIC BACKEND                  \e[0m"
-echo -e "\e[33;1m│ ${BOLD}${LIGHT}Version   = 7-44-7 LIbev.                    \e[0m"
-echo -e "\e[33;1m└──────────────────────────────────────────────────┘\e[0m"
-
+echo -e "\e[35;1m"
 
 
 
