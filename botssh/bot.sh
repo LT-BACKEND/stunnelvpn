@@ -163,7 +163,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e ""
 echo -e "\e[96;1m KETIK /menu DI BOT TELEGRAM ANDA \e[0m"
 echo -e ""
-read -p "Press !! ENTER Back To Menu"
+#read -p "Press !! ENTER Back To Menu"
 rm /media/cybervpn.zip
 clear
-menu
+#menu
