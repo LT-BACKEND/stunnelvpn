@@ -8,8 +8,8 @@ if [ "$LocalVersion" = "$version" ]; then
   echo
 else
   clear
-  figlet -f 3d "gretongers" | lolcat
-  echo "Update tersedia!!" | lolcat
+  figlet -f 3d "Lunatic" | lolcat
+  echo "Update Ready!!" | lolcat
   echo "Fix Menu" | lolcat
 
   spinner() {
