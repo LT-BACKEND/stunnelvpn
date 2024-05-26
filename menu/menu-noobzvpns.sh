@@ -219,26 +219,25 @@ echo -e "\e[33;1m└────────────────────
 }
 
 
-
-
 clear
-echo -e "\e[33;1m┌─────────────────────────────────────────────────┐\e[0m"
-echo -e "\e[33;1m│\e[44;97;1m          • NOBZVPNS FEATURES •             \e[0m"             
-echo -e "\e[33;1m└─────────────────────────────────────────────────┘\e[0m"
-echo -e "${LIGHT}"
-echo -e "01.MENU CREATE ACCOUNT NOOBZVPNS"
-echo -e "02.MENU DELETE ACCOUNT NOOBZVPNS"
-echo -e "03.MENU RENEW ACCOUNT NOOBZVPNS"
-echo -e "04.MENU LOCK ACCOUNT NOOBZVPNS"
-echo -e "05.MENU UNLOCK ACCOUNT NOOBZVPNS"
-echo -e "06.MENU SHOW ALL USER NOOBZVPNS"
-echo -e "07.MENU REMOVE ALL USER NOOBZVPNS"
-echo -e "\e[33;1m┌─────────────────────────────────────────────────┐\e[0m"
-echo -e "\e[33;1m│\e[44;97;1m           • LUNATIC TUNNELING •             \e[0m"             
-echo -e "\e[33;1m└─────────────────────────────────────────────────┘\e[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[44;97;1m           NOOBZ LIBEV             \e[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[37;1m [01] • ADDEDD NOOBZVPNS \e[0m"
+echo -e "\e[37;1m [02] • DELETE NO0BZVPNS \e[0m"
+echo -e "\e[37;1m [03] • RENEWS NOOBZVPNS \e[0m"
+echo -e "\e[37;1m [04] • LOCKED NOOBZVPNS \e[0m"
+echo -e "\e[37;1m [05] • UNLOCK NO0BZVPNS \e[0m"
+echo -e "\e[37;1m [06] • SHOWED NOOBZVPNS \e[0m"
+echo -e "\e[37;1m [07] • REMOVE NOOBZVPNS \e[0m"
+echo -e "\e[31;1m [00] • GO BACK          \e[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[44;91;1m        LUNATIC TUNNELING          \e[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-echo
-read -p " Select menu : " opt
+read -p " Just Input :  "  opt
 echo -e ""
 case $opt in
 01 | 1) clear ; create ;;
@@ -250,5 +249,5 @@ case $opt in
 07 | 7) clear ; remove ;;
 100) clear ; $up2u ;;
 00 | 0) clear ; menu ;;
-*) clear ; menu ;;
+*) clear ; dashboard ;;
 esac
