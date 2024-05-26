@@ -36,6 +36,7 @@ echo -e "\e[33;1m└────────────────────
 echo -e "\e[31;1m[xx]• GO BACK  \e[0m"
 echo -e "\e[31;1m[00]• ABOUT    \e[0m"
 echo -e "\e[31;1m[77]• SETTINGS \e[0m"
+echo -e "\e[31;1m[88]• UPDATE SC\e[0m"
 echo -e "\e[33;1m┌───────────────────────────────────────────────┐\e[0m"
 echo -e "\e[33;1m│\e[44;97;1m              • LUNATIC BACKEND •              \e[0m\e[33;1m│"             
 echo -e "\e[33;1m└───────────────────────────────────────────────┘\e[0m"
@@ -58,8 +59,9 @@ case $opt in
 13) clear ; curl "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/udp/udp-custom.sh" | bash ;;
 14) clear ; running ;;
 15) clear ; restart ;;
-00 | 0) clear ; about ;;
+00) clear ; about ;;
 77) clear ; setting ;;
+88) clear ; updateyes ;;
 *) clear ; menu ;;
 esac
 
