@@ -9,23 +9,23 @@ clear
 echo -e "\e[33;1m┌─────────────────────────────────────────────────┐\e[0m"
 echo -e "\e[33;1m│\e[44;97;1m              • MANAGERS SERVICE •              \e[0m"             
 echo -e "\e[33;1m└─────────────────────────────────────────────────┘\e[0m"
-echo -e "\e[37;1m[01] MENU SSH WEBSOCKET"
-echo -e "\e[37;1m[02] MENU SSH UDP"
-echo -e "\e[37;1m[03] MENU XRAY VMESS"
-echo -e "\e[37;1m[04] MENU XRAY VLESS"
-echo -e "\e[37;1m[05] MENU SHADOWSOCKS"
-echo -e "\e[37;1m[06] MENU TROJAN"
-echo -e "\e[37;1m[07] MENU NOOBZVPNS \e[0m"
+echo -e "\e[37;1m[01]• MENU SSH WEBSOCKET"
+echo -e "\e[37;1m[02]• MENU SSH UDP"
+echo -e "\e[37;1m[03]• MENU XRAY VMESS"
+echo -e "\e[37;1m[04]• MENU XRAY VLESS"
+echo -e "\e[37;1m[05]• MENU SHADOWSOCKS"
+echo -e "\e[37;1m[06]• MENU TROJAN"
+echo -e "\e[37;1m[07]• MENU NOOBZVPNS \e[0m"
+echo -e "\e[37;1m[08]• MENU PPTP & L2TP"
+echo -e "\e[37;1m[09]• MENU TRIALL"
 echo -e "\e[33;1m┌─────────────────────────────────────────────────┐\e[0m"
 echo -e "\e[33;1m│\e[44;97;1m              • FEATURES MANAGER •              \e[0m"             
 echo -e "\e[33;1m└─────────────────────────────────────────────────┘\e[0m"
-echo -e "\e[37;1m[08] INFO RUNNING"
-echo -e "\e[37;1m[09] TRIAL GENERATOR"
-echo -e "\e[37;1m[10] SETTINGS"
-echo -e "\e[37;1m[11] Bot panel setting"
-echo -e "\e[37;1m[12] FIX UDP CUSTOM"
-echo -e "\e[37;1m[13] MENU IPSEC (L2TP & PPTP)"
-echo -e "\e[31;1m[14] Back to terminal \e[0m"
+echo -e "\e[37;1m[10]• SETTINGS"
+echo -e "\e[37;1m[11]• BOT TELE"
+echo -e "\e[37;1m[12]• FIX UDP"
+echo -e "\e[37;1m[13]• RUNNING"
+echo -e "\e[31;1m[14]• GO BACK \e[0m"
 echo -e "\e[33;1m┌─────────────────────────────────────────────────┐\e[0m"
 echo -e "\e[33;1m│\e[44;97;1m             • LUNATIC BACKEND •              \e[0m"             
 echo -e "\e[33;1m└─────────────────────────────────────────────────┘\e[0m"
@@ -40,13 +40,13 @@ case $opt in
 05 | 5) clear ; menu-ss ;;
 06 | 6) clear ; menu-trojan ;;
 07 | 7) clear ; menu-noobzvpns ;;
-08 | 8) clear ; running ;;
+08 | 8) clear ; menu-ipsec ;;
 09 | 9) clear ; menu-trial ;;
 10) clear ; setting ;;
 11) clear ; panelbot ;;
 12) clear ; curl "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/udp/udp-custom.sh" | bash ;;
-13) clear ; menu-ipsec ;;
-14) clear ; menu1 ;;
+13) clear ; running ;;
+14) clear ; dashboard ;;
 100) clear ; $up2u ;;
 00 | 0) clear ; menu ;;
 *) clear ; menu ;;
