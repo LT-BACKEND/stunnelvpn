@@ -1,13 +1,8 @@
 #!/bin/bash
 clear
-
-echo -e ""
-e
-clear
 echo -e "==========================" | lolcat
 echo -e "LUNATIC BACKEND VPN SCRIPT" | lolcat
 echo -e "==========================" | lolcat
-echo -e ""
 echo -e "===========================" | lolcat
 echo -e "HARGA SCRIPT VPN PREMIUM" | lolcat
 echo -e "===========================" | lolcat
@@ -39,7 +34,8 @@ echo -e "\e[37;1m Sc Open Source: 300k"
 echo -e "\e[92;1mBENEFIT:\e[0m"
 echo -e "\e[35;1m Full Akses script\e[0m"
 echo -e "\e[35;1m Bebas Edit² Script\e[0m"
-echo -e "\r[35;1m Script jadi hak Milik\e[0m"
+echo -e "\e[35;1m Script jadi hak Milik\e[0m"
+echo -e "\e[35;1m Script Full Atas namamu\e[0m"
 echo -e "===========================" | lolcat
 echo ""
 read -p " GO BACK "
