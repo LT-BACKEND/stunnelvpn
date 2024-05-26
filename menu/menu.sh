@@ -7,7 +7,7 @@
 
 clear
 echo -e "\e[33;1m┌─────────────────────────────────────────────────┐\e[0m"
-echo -e "\e[33;1m│\e[44;97;1m              • MANAGERS SERVICE •              \e[0m"             
+echo -e "\e[33;1m│\e[44;97;1m              • PROTOCOL MANAGER •              \e[0m"             
 echo -e "\e[33;1m└─────────────────────────────────────────────────┘\e[0m"
 echo -e "\e[37;1m[01]• MENU SSH WEBSOCKET"
 echo -e "\e[37;1m[02]• MENU SSH UDP"
@@ -18,16 +18,26 @@ echo -e "\e[37;1m[06]• MENU TROJAN"
 echo -e "\e[37;1m[07]• MENU NOOBZVPNS \e[0m"
 echo -e "\e[37;1m[08]• MENU PPTP & L2TP"
 echo -e "\e[37;1m[09]• MENU TRIALL"
+echo -e "\e[37;1m[10]• MENU BACKUP VPS"
 echo -e "\e[33;1m┌─────────────────────────────────────────────────┐\e[0m"
-echo -e "\e[33;1m│\e[44;97;1m              • FEATURES MANAGER •              \e[0m"             
+echo -e "\e[33;1m│\e[44;97;1m              • BOT TELEGRAM FTR •              \e[0m"             
 echo -e "\e[33;1m└─────────────────────────────────────────────────┘\e[0m"
-echo -e "\e[37;1m[10]• SETTINGS"
 echo -e "\e[37;1m[11]• BOT TELE"
-echo -e "\e[37;1m[12]• FIX UDP"
-echo -e "\e[37;1m[13]• RUNNING"
-echo -e "\e[31;1m[14]• GO BACK \e[0m"
+echo -e "\e[37;1m[12]• BOT CHANGE"
 echo -e "\e[33;1m┌─────────────────────────────────────────────────┐\e[0m"
-echo -e "\e[33;1m│\e[44;97;1m             • LUNATIC BACKEND •              \e[0m"             
+echo -e "\e[33;1m│\e[44;97;1m             • FEATURES VPS SRVC •              \e[0m"             
+echo -e "\e[33;1m└─────────────────────────────────────────────────┘\e[0m"
+echo -e "\e[37;1m[13]• FIX UDP CSTM \e[0m"
+echo -e "\e[37;1m[14]• RUNNING SRVC \e[0m"
+echo -e "\e[37;1m[15]• RESTART SRVC \e[0m"
+echo -e "\e[33;1m┌─────────────────────────────────────────────────┐\e[0m"
+echo -e "\e[33;1m│\e[44;97;1m         • FEATURES ABOUT TERMINAL •            \e[0m"             
+echo -e "\e[33;1m└─────────────────────────────────────────────────┘\e[0m"
+echo -e "\e[31;1m[xx]• GO BACK  \e[0m"
+echo -e "\e[31;1m[00]• ABOUT    \e[0m"
+echo -e "\e[31;1m[77]• SETTINGS \e[0m"
+echo -e "\e[33;1m┌─────────────────────────────────────────────────┐\e[0m"
+echo -e "\e[33;1m│\e[44;97;1m              • LUNATIC BACKEND •               \e[0m"             
 echo -e "\e[33;1m└─────────────────────────────────────────────────┘\e[0m"
 echo -e ""
 read -p " Just Input : " opt
@@ -42,13 +52,14 @@ case $opt in
 07 | 7) clear ; menu-noobzvpns ;;
 08 | 8) clear ; menu-ipsec ;;
 09 | 9) clear ; menu-trial ;;
-10) clear ; setting ;;
+10) clear ; menu-backup ;;
 11) clear ; panelbot ;;
-12) clear ; curl "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/udp/udp-custom.sh" | bash ;;
-13) clear ; running ;;
-14) clear ; dashboard ;;
-100) clear ; $up2u ;;
-00 | 0) clear ; menu ;;
+12) clear ; bash /root/chat ;; # ganti chatid tele
+13) clear ; curl "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/udp/udp-custom.sh" | bash ;;
+14) clear ; running ;;
+15) clear ; restart ;;
+00 | 0) clear ; about ;;
+77) clear ; setting ;;
 *) clear ; menu ;;
 esac
 
