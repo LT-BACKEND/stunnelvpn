@@ -45,7 +45,7 @@ read -p " Just Input : " opt
 echo -e ""
 case $opt in
 01 | 1) clear ; menu-ssh ;;
-02 | 2) clear ; udp ;;
+02 | 2) clear ; menu-udp ;;
 03 | 3) clear ; menu-vmess ;;
 04 | 4) clear ; menu-vless ;;
 05 | 5) clear ; menu-ss ;;
