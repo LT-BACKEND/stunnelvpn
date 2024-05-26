@@ -62,6 +62,6 @@ case $opt in
 00) clear ; about ;;
 77) clear ; setting ;;
 88) clear ; updateyes ;;
-*) clear ; menu ;;
+*) clear ; dashboard ;;
 esac
 
