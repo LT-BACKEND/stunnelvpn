@@ -61,7 +61,7 @@ case $opt in
 15) clear ; restart ;;
 00) clear ; about ;;
 77) clear ; setting ;;
-88) clear ; updateyes ;;
+88) clear ; upsc ;;
 *) clear ; dashboard ;;
 esac
 
