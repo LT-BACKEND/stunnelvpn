@@ -193,27 +193,27 @@ clear
 
 # STATUS SERVICE OPENVPN
 if [[ $status_openvpn == "exited" ]]; then
-  status_vpn=" ${GREEN}Running ${NC}( No Error )"
+  status_vpn=" ${GREEN}[ON]"
 else
-  status_vpn="${RED}  Not Running ${NC}  ( Error )"
+  status_vpn="${RED}[OF]"
 fi
 
 
 
 # STATUS SERVICE TOR
 if [[ $status_tor == "exited" ]]; then
-  status_tor=" ${GREEN}Running ${NC}( No Error )"
+  status_tor=" ${GREEN}[ON]"
 else
-  status_tor="${RED}  Not Running ${NC}  ( Error )"
+  status_tor="${RED}[OF]"
 fi
 
 
 
 # STATUS SERVICE ANTI DDOS
 if [[ $status_ddos == "running" ]]; then
-  status_ddos=" ${GREEN}Running ${NC}( No Error )"
+  status_ddos=" ${GREEN}[ON]"
 else
-  status_ddos="${RED}  Not Running ${NC}  ( Error )"
+  status_ddos="${RED}[OF]"
 fi
 
 
@@ -221,27 +221,27 @@ fi
 
 # STATUS SERVICE UDP
 if [[ $status_udpcustom == "running" ]]; then
-  status_udpcustom=" ${GREEN}Running ${NC}( No Error )"
+  status_udpcustom=" ${GREEN}[ON]"
 else
-  status_udpcustom="${RED}  Not Running ${NC}  ( Error )"
+  status_udpcustom="${RED}[OF]"
 fi
 
 
 
 # STATUS SERVICE BOT PANEL
 if [[ $status_bot == "running" ]]; then
-  status_bot=" ${GREEN}Running ${NC}( No Error )"
+  status_bot=" ${GREEN}[ON]"
 else
-  status_bot="${RED}  Not Running ${NC}  ( Error )"
+  status_bot="${RED}[OF]"
 fi
 
 
 
 # STATUS SERVICE noobzvpns
 if [[ $status_noob == "running" ]]; then
-  status_noob=" ${GREEN}Running ${NC}( No Error )"
+  status_noob=" ${GREEN}[ON]"
 else
-  status_noob="${RED}  Not Running ${NC}  ( Error )"
+  status_noob="${RED}[OF]"
 fi
 
 
@@ -249,37 +249,37 @@ fi
 
 # STATUS SERVICE  SSH 
 if [[ $ssh_service == "running" ]]; then 
-   status_ssh=" ${GREEN}Running ${NC}( No Error )"
+   status_ssh=" ${GREEN}[ON]"
 else
-   status_ssh="${RED}  Not Running ${NC}  ( Error )"
+   status_ssh="${RED}[OF]"
 fi
 
 # STATUS SERVICE  SQUID 
 if [[ $squid_service == "running" ]]; then 
-   status_squid=" ${GREEN}Running ${NC}( No Error )"
+   status_squid=" ${GREEN}[ON]"
 else
-   status_squid="${RED}  Not Running ${NC}  ( Error )"
+   status_squid="${RED}[OF]"
 fi
 
 # STATUS SERVICE  VNSTAT 
 if [[ $vnstat_service == "running" ]]; then 
-   status_vnstat=" ${GREEN}Running ${NC}( No Error )"
+   status_vnstat=" ${GREEN}[ON]"
 else
-   status_vnstat="${RED}  Not Running ${NC}  ( Error )"
+   status_vnstat="${RED}[OF]"
 fi
 
 # STATUS SERVICE  CRONS 
 if [[ $cron_service == "running" ]]; then 
-   status_cron=" ${GREEN}Running ${NC}( No Error )"
+   status_cron=" ${GREEN}[ON]"
 else
-   status_cron="${RED}  Not Running ${NC}  ( Error )"
+   status_cron="${RED}[OF]"
 fi
 
 # STATUS SERVICE  FAIL2BAN 
 if [[ $fail2ban_service == "running" ]]; then 
-   status_fail2ban=" ${GREEN}Running ${NC}( No Error )"
+   status_fail2ban=" ${GREEN}[ON]"
 else
-   status_fail2ban="${RED}  Not Running ${NC}  ( Error )"
+   status_fail2ban="${RED}[OF]"
 fi
 
 # STATUS SERVICE  TLS 
@@ -291,67 +291,67 @@ fi
 
 # STATUS SERVICE NON TLS V2RAY
 if [[ $nontls_v2ray_status == "running" ]]; then 
-   status_nontls_v2ray=" ${GREEN}Running ${NC}( No Error )${NC}"
+   status_nontls_v2ray=" ${GREEN}[ON]${NC}"
 else
-   status_nontls_v2ray="${RED}  Not Running ${NC}  ( Error )${NC}"
+   status_nontls_v2ray="${RED}[OF]${NC}"
 fi
 
 # STATUS SERVICE VLESS HTTPS
 if [[ $vless_tls_v2ray_status == "running" ]]; then
   status_tls_vless=" ${GREEN}Running${NC} ( No Error )"
 else
-  status_tls_vless="${RED}  Not Running ${NC}  ( Error )${NC}"
+  status_tls_vless="${RED}[OF]${NC}"
 fi
 
 # STATUS SERVICE VLESS HTTP
 if [[ $vless_nontls_v2ray_status == "running" ]]; then
   status_nontls_vless=" ${GREEN}Running${NC} ( No Error )"
 else
-  status_nontls_vless="${RED}  Not Running ${NC}  ( Error )${NC}"
+  status_nontls_vless="${RED}[OF]${NC}"
 fi
 # STATUS SERVICE TROJAN
 if [[ $trojan_server == "running" ]]; then 
-   status_virus_trojan=" ${GREEN}Running ${NC}( No Error )${NC}"
+   status_virus_trojan=" ${GREEN}[ON]${NC}"
 else
-   status_virus_trojan="${RED}  Not Running ${NC}  ( Error )${NC}"
+   status_virus_trojan="${RED}[OF]${NC}"
 fi
 # Status Service Trojan GO
 if [[ $strgo == "active" ]]; then
-  status_trgo=" ${GREEN}Running ${NC}( No Error )${NC}"
+  status_trgo=" ${GREEN}[ON]${NC}"
 else
-  status_trgo="${RED}  Not Running ${NC}  ( Error )${NC}"
+  status_trgo="${RED}[OF]${NC}"
 fi
 # STATUS SERVICE TROJAN GFW
 if [[ $trojangfw_server == "running" ]]; then 
-   status_virus_trojangfw=" ${GREEN}Running ${NC}( No Error )${NC}"
+   status_virus_trojangfw=" ${GREEN}[ON]${NC}"
 else
-   status_virus_trojangfw="${RED}  Not Running ${NC}  ( Error )${NC}"
+   status_virus_trojangfw="${RED}[OF]${NC}"
 fi
 # STATUS SERVICE DROPBEAR
 if [[ $dropbear_status == "running" ]]; then 
-   status_beruangjatuh=" ${GREEN}Running${NC} ( No Error )${NC}"
+   status_beruangjatuh=" ${GREEN}[ON]${NC}"
 else
-   status_beruangjatuh="${RED}  Not Running ${NC}  ( Error )${NC}"
+   status_beruangjatuh="${RED}[OF]${NC}"
 fi
 
 # STATUS SERVICE STUNNEL
 if [[ $stunnel_service == "running" ]]; then 
-   status_stunnel=" ${GREEN}Running ${NC}( No Error )"
+   status_stunnel=" ${GREEN}[ON]${NC}"
 else
-   status_stunnel="${RED}  Not Running ${NC}  ( Error )}"
+   status_stunnel="${RED}[OF]${NC}"
 fi
 # STATUS SERVICE WEBSOCKET TLS
 if [[ $wstls == "running" ]]; then 
-   shdroptls=" ${GREEN}Running ${NC}( No Error )${NC}"
+   shdroptls=" ${GREEN}[ON]${NC}"
 else
-   shdroptls="${RED}  Not Running ${NC}  ( Error )${NC}"
+   shdroptls="${RED}[OF]${NC}"
 fi
 
 # STATUS SERVICE WEBSOCKET DROPBEAR
 if [[ $wsdrop == "running" ]]; then 
-   shdrophttp=" ${GREEN}Running ${NC}( No Error )${NC}"
+   shdrophttp=" ${GREEN}[ON]${NC}"
 else
-   dropbear_status="${RED}  Not Running ${NC}  ( Error )${NC}"
+   dropbear_status="${RED}[OF]${NC}"
 fi
 
 # TOTAL RAM
@@ -366,29 +366,20 @@ echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[44;91;1m        LUNATIC TUNNELING          \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo ""
-echo -e "❇️ SSH / TUN / websocket   :$status_ssh"
-echo -e "❇️ OpenVPN                 :$status_vpn"
-echo -e "❇️ Dropbear                :$status_beruangjatuh"
-echo -e "❇️ Stunnel4                :$status_stunnel"
-echo -e "❇️ Squid                   :$status_squid"
-echo -e "❇️ Fail2Ban                :$status_fail2ban"
-echo -e "❇️ Crons                   :$status_cron"
-echo -e "❇️ Vnstat                  :$status_vnstat"
-echo -e "❇️ XRAYS Vmess TLS         :$status_tls_v2ray"
-echo -e "❇️ XRAYS Vmess None TLS    :$status_nontls_v2ray"
-echo -e "❇️ XRAYS Vless TLS         :$status_tls_vless"
-echo -e "❇️ XRAYS Vless None TLS    :$status_nontls_vless"
-echo -e "❇️ XRAYS Trojan            :$status_virus_trojan"
-echo -e "❇️ Trojan GO               :$status_virus_trojan"
-echo -e "❇️ Websocket TLS           :$shdroptls"
-echo -e "❇️ Websocket None TLS      :$shdrophttp"
-echo -e "❇️ SLOWDNS                 :$shdrophttp"
-echo -e "❇️ ANTI DDOS               :$status_ddos"
-echo -e "❇️ UDP CUSTOM              :$status_udpcustom"
-echo -e "❇️ BOT PANEL               :$status_bot"
-echo -e "❇️ NOOBZVPNS               :$status_noob"
-echo -e ""
+echo -e "🌎 SSH             : $status_ssh"
+echo -e "🌎 XRAY            : $status_tls_v2ray"
+echo -e "🌎 NOOBZVPNS       : $status_noob"
+echo -e "🌎 UDP CUSTOM      : $status_udpcustom"
+echo -e "🌎 OpenVPN         : $status_vpn"
+echo -e "🌎 SLOWDNS         : $shdrophttp"
+echo -e "🌎 Dropbear        : $status_beruangjatuh"
+echo -e "🌎 Stunnel4        : $status_stunnel"
+echo -e "🌎 Squid           : $status_squid"
+echo -e "🌎 Fail2Ban        : $status_fail2ban"
+echo -e "🌎 Crons           : $status_cron"
+echo -e "🌎 Vnstat          : $status_vnstat"
+echo -e "🌎 ANTI DDOS       : $status_ddos"
+echo -e "🌎 BOT PANEL       : $status_bot"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
