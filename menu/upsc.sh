@@ -18,9 +18,8 @@ rm -rf menu-vmess
 rm -rf menu-noobzvpns
 rm -rf menu-ss
 rm -rf menu-ipsec
-rm -rf menush
+rm -rf menu-udp
 rm -rf setting
-rm -rf udp
 rm -rf restart
 rm -rf running
 rm -rf system
@@ -47,7 +46,7 @@ wget -q -O /usr/bin/setting "https://raw.githubusercontent.com/LT-BACKEND/stunne
 wget -q -O /usr/bin/upsc "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/upsc.sh" && chmod +x /usr/bin/upsc
 wget -q -O /usr/bin/running "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/running.sh" && chmod +x /usr/bin/running
 wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/restart.sh" && chmod +x /usr/bin/restart
-echo -e ""
+wget -q -O /usr/bin/menu-udp "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-udp.sh" && chmod +x /usr/bin/menu-udp
 echo -e "3 sec .. Create New Data Update script"
 sleep 3
 clear
