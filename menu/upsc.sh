@@ -46,6 +46,7 @@ wget -q -O /usr/bin/running "https://raw.githubusercontent.com/LT-BACKEND/stunne
 wget -q -O /usr/bin/setting "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/Themes/setting.sh" && chmod +x /usr/bin/setting
 wget -q -O /usr/bin/upsc "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/upsc.sh" && chmod +x /usr/bin/upsc
 wget -q -O /usr/bin/running "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/running.sh" && chmod +x /usr/bin/running
+wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/restart.sh" && chmod +x /usr/bin/restart
 echo -e ""
 echo -e "3 sec .. Create New Data Update script"
 sleep 3
