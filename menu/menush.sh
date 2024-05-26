@@ -383,24 +383,26 @@ read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
 clear
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m                         ⇱ SSH UDP MENU  ⇲                    \E[0m"
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[44;97;1m            UDP LIBEV              \e[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[37;1m [01] • ADD UDP    \e[0m"
+echo -e "\e[37;1m [02] • DELETE UDP \e[0m"
+echo -e "\e[37;1m [03] • RENEW UDP \e[0m"
+echo -e "\e[37;1m [04] • USER UDP   \e[0m"
+echo -e "\e[37;1m [05] • MULOG UDP  \e[0m"
+echo -e "\e[37;1m [06] • DELETE XP  \e[0m"
+echo -e "\e[37;1m [07] • AUTOKIL UDP\e[0m"
+echo -e "\e[37;1m [08] • MEMBER UDP \e[0m"
+echo -e "\e[31;1m [00] • GO BACK    \e[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[44;91;1m        LUNATIC TUNNELING          \e[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-echo -e "     ${BICyan}[${BIWhite}1${BICyan}] Add Account SSH UDP      "
-echo -e "     ${BICyan}[${BIWhite}2${BICyan}] Delete Account SSH UDP     "
-echo -e "     ${BICyan}[${BIWhite}3${BICyan}] Renew Account SSH UDL    "
-echo -e "     ${BICyan}[${BIWhite}4${BICyan}] Cek User SSH UD    "
-echo -e "     ${BICyan}[${BIWhite}5${BICyan}] Mullog SSH  UDP  "
-echo -e "     ${BICyan}[${BIWhite}6${BICyan}] Auto Del user Exp     "
-echo -e "     ${BICyan}[${BIWhite}7${BICyan}] Auto Kill user SSH UDP   "
-echo -e "     ${BICyan}[${BIWhite}8${BICyan}] Cek Member SSH UDP"
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "${LIGHT}                     ⇱ GRETONGERS VPN PREMIUM ⇲                   "
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
-echo ""
-read -p " Select menu : " opt
+read -p " Just Input :  "  opt
 echo -e ""
 case $opt in
 1) clear ; addudp ;;
@@ -413,5 +415,5 @@ case $opt in
 8) clear ; member ;;
 0) clear ; menu ;;
 x) exit ;;
-*) echo -e "" ; echo "Press any key to back on menu" ; sleep 1 ; menu ;;
+*) menu ;;
 esac
