@@ -1,7 +1,9 @@
 #!/bin/bash
+clear
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 ###########- COLOR CODE -##############
+clear
 echo -e "   \e[41;97;1mUPDATE SCRIPT NEW VERSION\e[0m"
 echo -e ""
 # // Delete data Lama
@@ -47,4 +49,5 @@ sleep 3
 clear
 echo -e "\e[32;1mSuccessfully\e[0m"
 sleep 2
-exit
+clear
+dashboard
