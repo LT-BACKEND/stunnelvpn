@@ -58,33 +58,33 @@ export BOLD="\e[1m"
 export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
 
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m            ⇱ MENU SETTING ⇲                 \E[0m"
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "${WhiteB}"
-echo
-echo "[1].Add Host"
-echo "[2].Renew Cert"
-echo "[3].Free domain DNS"
-echo "[4].speedtest"
-echo "[5].kill all proces"
-echo "[6].clear log"
-echo "[7].Autoreboot"
-echo "[8].Change Banner Dropbear"
-echo "[9].Auto banned multi login"
-echo "[10].limit speed vps"
-echo "[11].restart all service"
-echo "[12].WEBMIN"
-echo "[13].Cek semua port"
-echo "[14].bot menu"
-echo "[15].Menu Backup"
-echo "[16].About"
-echo "[17].Add proxy cloudfront"
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-read -p    "Pilih Nomor :" bro
-
-
-case $bro in
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[44;97;1m            SET LIBEV              \e[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[37;1m [01] • ADDED DOMAIN   \e[0m"
+echo -e "\e[37;1m [02] • RENEW CERT HOST \e[0m"
+echo -e "\e[37;1m [03] • FREE DOMAIN DNS  \e[0m"
+echo -e "\e[37;1m [04] • CHECK SPEEDTEST   \e[0m"
+echo -e "\e[37;1m [05] • KILL ALL PROCES  \e[0m"
+echo -e "\e[37;1m [06] • CLEAR ALL LOGG  \e[0m"
+echo -e "\e[37;1m [07] • AUTOREBOOT VPS \e[0m"
+echo -e "\e[37;1m [08] • CHANGE BANNER   \e[0m"
+echo -e "\e[37;1m [09] • AUTO KILL MULOG  \e[0m"
+echo -e "\e[37;1m [10] • LIMIT SPEED VPS \e[0m"
+echo -e "\e[37;1m [11] • INSTALLER WEBMIN \e[0m"
+echo -e "\e[37;1m [12] • CHECK ALL PORT\e[0m"
+echo -e "\e[37;1m [13] • ADD CLOUDFRONT \e[0m"
+echo -e "\e[37;1m [14] • About \e[0m"
+echo -e "\e[31;1m [00] • GO BACK    \e[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[44;91;1m        LUNATIC TUNNELING          \e[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e ""
+read -p " Just Input :  "  opt
+echo -e ""
+case $opt in
 01 | 1) clear ; addhost ;;
 02 | 2) clear ; genssl ;;
 03 | 3) clear ; fix ;;
@@ -95,13 +95,10 @@ case $bro in
 08 | 8) clear ; nano /etc/cyber.site ;;
 09 | 9) clear ; autokill ;;
 10) clear ; limit-speed ;;
-11) clear ; restart ;;
-12) clear ; wbm ;;
-13) clear ; netstat -tnlp ;;
-14) clear ; bash /root/chat ;;
-15) clear ; menu-backup ;;
-16) clear ; infosc ;; 
-17) clear ; cftn ;;
+11) clear ; wbm ;;
+12) clear ; netstat -tnlp ;;
+13) clear ; cftn ;;
+14) clear ; infosc ;;
 100) clear ; $up2u ;;
 00 | 0) clear ; menu ;;
 *) clear ; menu ;;
