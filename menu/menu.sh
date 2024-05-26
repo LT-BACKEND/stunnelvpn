@@ -41,7 +41,7 @@ wget -q -O /root/status "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn
 
 clear
 echo -e "\e[33;1m┌─────────────────────────────────────────────────┐\e[0m"
-echo -e "\e[33;1m│\e[44;97;1m            • MANAGERS SERVICE •              \e[0m"             
+echo -e "\e[33;1m│\e[44;97;1m              • MANAGERS SERVICE •              \e[0m"             
 echo -e "\e[33;1m└─────────────────────────────────────────────────┘\e[0m"
 echo -e "\e[37;1m[01] MENU SSH WEBSOCKET"
 echo -e "\e[37;1m[02] MENU SSH UDP"
@@ -51,7 +51,7 @@ echo -e "\e[37;1m[05] MENU SHADOWSOCKS"
 echo -e "\e[37;1m[06] MENU TROJAN"
 echo -e "\e[37;1m[07] MENU NOOBZVPNS \e[0m"
 echo -e "\e[33;1m┌─────────────────────────────────────────────────┐\e[0m"
-echo -e "\e[33;1m│\e[44;97;1m            • FEATURES MANAGER •              \e[0m"             
+echo -e "\e[33;1m│\e[44;97;1m              • FEATURES MANAGER •              \e[0m"             
 echo -e "\e[33;1m└─────────────────────────────────────────────────┘\e[0m"
 echo -e "\e[37;1m[08] INFO RUNNING"
 echo -e "\e[37;1m[09] TRIAL GENERATOR"
