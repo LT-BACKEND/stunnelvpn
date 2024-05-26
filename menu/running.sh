@@ -284,9 +284,9 @@ fi
 
 # STATUS SERVICE  TLS 
 if [[ $tls_v2ray_status == "running" ]]; then 
-   status_tls_v2ray=" ${GREEN}Running${NC} ( No Error )"
+   status_tls_v2ray=" ${GREEN}[ON]\e[0m"
 else
-   status_tls_v2ray="${RED}  Not Running${NC}   ( Error )"
+   status_tls_v2ray="${RED}[OF]\e[0m"
 fi
 
 # STATUS SERVICE NON TLS V2RAY
@@ -380,37 +380,36 @@ loading() {
 }
 
 clear
-echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[44;91;1m        LUNATIC TUNNELING          \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "🌎 SSH             : $status_ssh"
+echo -e "🌎 \e[37;1mSSH             : $status_ssh"
 sleep 0.8 & loading $!
-echo -e "🌎 XRAY            : $status_tls_v2ray"
+echo -e "🌎 \e[37;1mXRAY            : $status_tls_v2ray"
 sleep 0.8 & loading $!
-echo -e "🌎 NOOBZVPNS       : $status_noob"
+echo -e "🌎 \e[37;1mNOOBZVPNS       : $status_noob"
 sleep 0.8 & loading $!
-echo -e "🌎 UDP CUSTOM      : $status_udpcustom"
+echo -e "🌎 \e[37;1mUDP CUSTOM      : $status_udpcustom"
 sleep 0.8 & loading $!
-echo -e "🌎 OpenVPN         : $status_vpn"
+echo -e "🌎 \e[37;1mOpenVPN         : $status_vpn"
 sleep 0.8 & loading $!
-echo -e "🌎 SLOWDNS         : $shdrophttp"
+echo -e "🌎 \e[37;1mSLOWDNS         : $shdrophttp"
 sleep 0.8 & loading $!
-echo -e "🌎 Dropbear        : $status_beruangjatuh"
+echo -e "🌎 \e[37;1mDropbear        : $status_beruangjatuh"
 sleep 0.8 & loading $!
-echo -e "🌎 Stunnel4        : $status_stunnel"
+echo -e "🌎 \e[37;1mStunnel4        : $status_stunnel"
 sleep 0.8 & loading $!
-echo -e "🌎 Squid           : $status_squid"
+echo -e "🌎 \e[37;1mSquid           : $status_squid"
 sleep 0.8 & loading $!
-echo -e "🌎 Fail2Ban        : $status_fail2ban"
+echo -e "🌎 \e[37;1mFail2Ban        : $status_fail2ban"
 sleep 0.8 & loading $!
-echo -e "🌎 Crons           : $status_cron"
+echo -e "🌎 \e[37;1mCrons           : $status_cron"
 sleep 0.8 & loading $!
-echo -e "🌎 Vnstat          : $status_vnstat"
+echo -e "🌎 \e[37;1mVnstat          : $status_vnstat"
 sleep 0.8 & loading $!
-echo -e "🌎 ANTI DDOS       : $status_ddos"
+echo -e "🌎 \e[37;1mANTI DDOS       : $status_ddos"
 sleep 0.8 & loading $!
-echo -e "🌎 BOT PANEL       : $status_bot"
+echo -e "🌎 \e[37;1mBOT PANEL       : $status_bot"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
