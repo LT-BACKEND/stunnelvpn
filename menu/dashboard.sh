@@ -192,6 +192,8 @@ echo -e "\e[33;1m┌────────────────────
 echo -e "\e[33;1m│•\e[31;1m Uptime:\e[32;1m $( uptime -p  | cut -d " " -f 2-10000 ) "
 echo -e "\e[33;1m│•\e[31;1m Time:\e[32;1m $( date -d "0 days" +"%d-%m-%Y | %X" )"
 echo -e "\e[33;1m│•\e[31;1m Domain:\e[32;1m $( cat /etc/xray/domain )"
+echo -e "\e[33;1m│•\e[31;1m Ns Domain: $(cat /root/nsdomain)"
+echo -e "\e[33;1m│•\e[31;1m Cloudfront: $(cat /root/cloudfront)"
 echo -e "\e[33;1m│•\e[31;1m Ipvps:\e[32;1m $(wget -qO- ipinfo.io/ip)"
 echo -e "\e[33;1m│•\e[31;1m Isp:\e[32;1m $(curl -s ipinfo.io/org | cut -d " " -f 2-10 )\e[0m"
 echo -e "\e[33;1m└──────────────────────────────────────────────────┘\e[0m"
