@@ -239,15 +239,15 @@ if [ -n "$SSH_CLIENT" ] && [ -z "$TMUX" ]; then
 ==============================
 💥 NOTIFICATIONS INSTALLER 💥
 ==============================
-🎲Tanggal   : $DATE_EXEC
-🎲Domain    : $(cat /etc/xray/domain) 
-🎲Hostname  : $HOSTNAME 
-🎲Publik IP :$IPADDR 
-🎲IP PROV   : $IP 
-🎲ISP       : $ORG
-🎲KOTA      : $CITY
-🎲PROVINSI  : $REGION
-🎲PORT SSH. : $PORT
+👙Tanggal   : $DATE_EXEC
+👙Domain    : $(cat /etc/xray/domain) 
+👙Hostname  : $HOSTNAME 
+👙Publik IP : $IPADDR 
+👙IP PROV   : $IP 
+👙ISP       : $ORG
+👙CITY      : $CITY
+👙REGIONAL  : $REGION
+👙PORT SSH. : $PORT
 ==============================
 ✨SCRIPTED LUNATIC TUNNELING✨
 =============================="
@@ -274,7 +274,7 @@ fi
 fi
 mesg n || true
 clear
-menu1
+dashboard
 END
 chmod 644 /root/.profile
 if [ -f "/root/log-install.txt" ]; then
@@ -287,6 +287,9 @@ rm -f ins-xray.sh
 rm -f senmenu.sh
 rm -f setupku.sh
 rm -f xraymode.sh
+rm -f installer.sh
+rm -rf demeling.sh
+rm -rf arca.sh
 clear
 echo "------------------------------------------------------------"
 echo ""
