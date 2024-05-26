@@ -17,6 +17,7 @@ rm -rf menu-vlesss
 rm -rf menu-vmess
 rm -rf menu-noobzvpns
 rm -rf menu-ss
+rm -rf menu-ipsec
 rm -rf menush
 rm -rf setting
 rm -rf udp
