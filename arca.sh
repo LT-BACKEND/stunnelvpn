@@ -28,6 +28,9 @@ wget -q -O /usr/bin/cek-bandwidth "https://raw.githubusercontent.com/Agunxzzz/Xr
 wget -q -O /usr/bin/cek-ram "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/ram.sh"
 wget -q -O /usr/bin/limit-speed "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/limit-speed.sh"
 
+# //
+wget -q -O /usr/bin/about "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/about.sh"
+wget -q -O /usr/bin/upsc "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/upsc.sh"
 #wget -q -O /usr/bin/menu-socks "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/menu-socks.sh"
 wget -q -O /usr/bin/menu-ss "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-ss.sh"
 wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-vless.sh"
@@ -241,6 +244,9 @@ chmod +x /usr/bin/menu-ssh
 chmod 777 /usr/bin/addudp
 chmod 777 /usr/bin/udp
 chmod +x /usr/bin/menu
+
+chmod +x /usr/bin/upsc
+chmod +x /usr/bin/about
 #chmod +x /usr/bin/add-ws
 #chmod +x /usr/bin/add-ssws
 #chmod +x /usr/bin/add-socks
