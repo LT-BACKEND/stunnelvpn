@@ -9,7 +9,7 @@ if [ "$LocalVersion" = "$version" ]; then
 else
   clear
   figlet -f 3d "Lunatic" | lolcat
-  echo "Update Ready!!" | lolcat
+  echo "Update tersedia!!" | lolcat
   echo "Fix Menu" | lolcat
 
   spinner() {
@@ -69,11 +69,29 @@ else
   # Hapus semua file sebelum mengunduh versi baru
   rm -f /etc/version
   rm -f /usr/bin/menu
+  rm -f /usr/bin/dashboard
+  rm -f /usr/bin/setting
+  rm -f /usr/bin/udp
+  rm -f /usr/bin/menush
   rm -f /usr/bin/menu-ssh
+  rm -f /usr/bin/menu-vmess
+  rm -f /usr/bin/menu-vless
+  rm -f /usr/bin/menu-trojan
+  rm -f /usr/bin/restart
+  rm -f /usr/bin/running
   # Tambahkan perintah rm untuk file lainnya...
 wget -q -O /etc/version "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/versiupdate" && chmod +x /etc/version
-  rm -f /usr/bin/menu
-wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu.sh" && chmod 777 /usr/bin/menu
-
-
+# // Menu System
+wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu.sh" && chmod 777 /usr/bin/menu
+wget -q -O /usr/bin/dashboard "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/dashboard.sh" && chmod 777 /usr/bin/dashboard
+wget -q -O /usr/bin/setting "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/Themes/setting.sh" && chmod 777 /usr/bin/setting
+# // Menu Protocol
+wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-ssh.sh" && chmod 777 /usr/bin/menu-ssh
+wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-vless.sh" && chmod 777 /usr/bin/menu-vless
+wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-vmess.sh" && chmod 777 /usr/bin/menu-vmess
+wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-trojan.sh" && chmod 777 /usr/bin/menu-trojan
+wget -q -O /usr/bin/udp "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menush.sh" && chmod 777 /usr/bin/udp
+# // Running Restart
+wget -q -O /usr/bin/running "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/running.sh" && chmod 777 /usr/bin/running
+wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/restart.sh" && chmod 777 /usr/bin/restart
 fi
