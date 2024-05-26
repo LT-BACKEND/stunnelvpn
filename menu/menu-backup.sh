@@ -13,19 +13,22 @@ Green_background="\033[42;37m"
 Red_background="\033[41;37m"
 Suffix="\033[0m"
 
-
-echo -e "\e[33;1m┌─────────────────────────────────────────────────┐\e[0m"
-echo -e "\e[33;1m│\e[44;97;1m             • BACKUP FEATURES •              \e[0m"             
-echo -e "\e[33;1m└─────────────────────────────────────────────────┘\e[0m"
-echo -e "\e[33;1m┌─────────────────────────────────────────────────┐\e[0m"
-echo -e "\e[37;1m [1] Backup"
-echo -e "\e[37;1m [2] Restore"
-echo -e "\e[37;1m [3] strt"
-echo -e "\e[37;1m [4] limit speed"
-echo -e "\e[37;1m [5] autobackup \e[0m"
-echo -e "\e[33;1m└─────────────────────────────────────────────────┘\e[0m"
-echo
-read -p    " Just Input Number └╼>>>  " bro
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[44;97;1m          BACKUP LIBEV             \e[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[37;1m [01] • BACKUP VPS DATA \e[0m"
+echo -e "\e[37;1m [02] • RESTOR VPS DATA \e[0m"
+echo -e "\e[37;1m [03] • START           \e[0m"
+echo -e "\e[37;1m [04] • SET LIMIT SPEED \e[0m"
+echo -e "\e[37;1m [05] • AUTOBACKUP VPS  \e[0m"
+echo -e "\e[31;1m [00] • GO BACK         \e[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[44;91;1m        LUNATIC TUNNELING          \e[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e ""
+read -p " Just Input :  "  bro
 
 if [ $bro = 1 ] || [ $bro = 1 ]
 then
@@ -66,4 +69,9 @@ mautobackup
 echo -e "\e[33;1m┌─────────────────────────────────────────────────┐\e[0m"
 echo -e "\e[33;1m│\e[44;97;1m            • LUNATIC TUNNELING •              \e[0m"             
 echo -e "\e[33;1m└─────────────────────────────────────────────────┘\e[0m"
+fi
+
+if [ $bro = 00 ] || [ $bro = 00 ]
+then
+dashboard
 fi
