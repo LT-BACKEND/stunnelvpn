@@ -84,10 +84,7 @@ read -rp "   Input Username : " -e user
 if [ -z $user ]; then
 echo -e "$GREEN│${NC} [Error] Username cannot be empty "
 echo -e "$GREEN└─────────────────────────────────────────────────┘${NC}"
-echo -e "$GREEN┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$GREEN│${NC}             • GRETONGERS VPN PREMIUM •              $NC"
-echo -e "$GREEN└─────────────────────────────────────────────────┘${NC}"
-echo ""
+echo
 read -n 1 -s -r -p "   Press any key to back on menu"
 menu
 fi
@@ -101,10 +98,7 @@ echo -e "$GREEN└────────────────────�
 echo -e "$GREEN┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$GREEN│${NC} Please choose another name."
 echo -e "$GREEN└─────────────────────────────────────────────────┘${NC}"
-echo -e "$GREEN┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$GREEN│${NC}             • GRETONGERS VPN PREMIUM •              $NC"
-echo -e "$GREEN└─────────────────────────────────────────────────┘${NC}"
-echo ""
+echo
 read -n 1 -s -r -p "   Press any key to back on menu"
 menu-ss
                 fi
@@ -401,13 +395,8 @@ echo -e "$GREEN│${NC} ${COLBG1}              • RENEW SSWS USER •          
 echo -e "$GREEN└─────────────────────────────────────────────────┘${NC}"
 echo -e "$GREEN┌─────────────────────────────────────────────────┐${NC}"
 grep -E "^## " "/etc/xray/config.json" | cut -d ' ' -f 2-3 | column -t | sort | uniq | nl
-echo -e "$GREEN│${NC}"
-echo -e "$GREEN│${NC}  • [NOTE] Press any key to back on menu"
-echo -e "$GREEN└─────────────────────────────────────────────────┘${NC}"
-echo -e "$GREEN┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$GREEN│${NC}             • GRETONGERS VPN PREMIUM •              $NC"
-echo -e "$GREEN└─────────────────────────────────────────────────┘${NC}"
 echo -e "$GREEN───────────────────────────────────────────────────${NC}"
+echo -e ""
 read -rp "   Input Username : " user
 if [ -z $user ]; then
 menu-ss
