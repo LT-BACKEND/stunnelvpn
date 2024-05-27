@@ -375,6 +375,7 @@ printf "%-10s %-10s %-10s %-20s\n"  " ${akun}"   " ${gb}" "${lim}" "$iplimit    
 done
 echo ""
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
+echo -e ""
 read -n 1 -s -r -p "  • [NOTE] Press any key to back on menu"
 menu-trojan
 }
@@ -385,11 +386,8 @@ echo -e "$COLOR1│${NC} ${COLBG1}           • RESULT TROJAN USER •         
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 grep -E "^#! " "/etc/xray/config.json" | cut -d ' ' -f 2-3 | column -t | sort | uniq | nl
-echo -e "$COLOR1│${NC}"
-echo -e "$COLOR1│${NC}Notice!! Result akan terhapus otomatis setelah Reboot"
-echo -e "$COLOR1│${NC}  • [NOTE] Press any key to back on menu "
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
-echo -e "$COLOR1───────────────────────────────────────────────────${NC}"
+echo -e ""
 read -rp "   Input Username : " user
 if [ -z $user ]; then
 menu-trojan
