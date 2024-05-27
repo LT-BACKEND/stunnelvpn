@@ -87,12 +87,10 @@ echo "$pp" > /etc/xray/domain
 echo "$pp" > /etc/v2ray/domain
 echo $pp > /root/domain
 echo "IP=$pp" > /var/lib/scrz-prem/ipvps.conf
-    fi
+fi
 elif [[ $host == "2" ]]; then
-clear
-wget ${RANDOMDOMAIN}acakdomain.sh && chmod +x acakdomain.sh && ./acakdomain.sh
-else
-echo "Gagal"
+    clear
+    wget ${RANDOMDOMAIN}acakdomain.sh && chmod +x acakdomain.sh && ./acakdomain.sh
 fi
 #install ssh ovpn
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
