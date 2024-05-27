@@ -4,11 +4,11 @@
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
 apt install jq curl -y
-DOMAIN=remoot.my.id
+DOMAIN=inject.cloud
 sub=tunnel-$(</dev/urandom tr -dc a-z | head -c4)
-SUB_DOMAIN=${sub}.remoot.my.id
-CF_ID=arismar.amar@gmail.com
-CF_KEY=f7fa85e2472592639b7d1cf82f1c5490ec1cd
+SUB_DOMAIN=${sub}.inject.cloud
+CF_ID=mezzqueen293@gmail.com
+CF_KEY=e03f30d53ad7ec2ab54327baa5e2da5ab44f0
 set -euo pipefail
 IP=$(curl -sS ifconfig.me);
 echo "Updating DNS for ${SUB_DOMAIN}..."
@@ -52,5 +52,4 @@ sleep 3
 domain=$(cat /root/domain)
 cp -r /root/domain /etc/xray/domain
 #read -n 1 -s -r -p "Press any key to back on genssl"
-
 genssl
