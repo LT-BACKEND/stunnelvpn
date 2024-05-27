@@ -32,6 +32,9 @@ pip3 install paramiko
 #isi data
 azi=$(cat /root/nsdomain)
 domain=$(cat /etc/xray/domain)
+clear
+echo -e ""
+echo -e ""
 echo "INSTALL BOT CREATE SSH via TELEGRAM"
 read -e -p "[*] Input Your Id Telegram :" admin
 read -e -p "[*] Input Your bot Telegram :" token
@@ -161,9 +164,9 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\e[44;97;1m       DOWNLOAD SUCCESFULLY        \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-echo -e "\e[96;1m KETIK /menu DI BOT TELEGRAM ANDA \e[0m"
+echo -e "\e[96;1m KETIK /menu : .menu : .crot : .gas DI BOT TELEGRAM ANDA \e[0m"
 echo -e ""
-#read -p "Press !! ENTER Back To Menu"
+read -p "Press !! ENTER Back To Menu"
 rm /media/cybervpn.zip
 clear
-#menu
+menu
