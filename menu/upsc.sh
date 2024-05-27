@@ -26,6 +26,7 @@ rm -rf system
 rm -rf about
 rm -rf upsc
 rm -rf running
+rm -rf menu-bot
 # // Download Data Baru
 # // menu
 wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu.sh" && chmod +x /usr/bin/menu
@@ -47,8 +48,9 @@ wget -q -O /usr/bin/upsc "https://raw.githubusercontent.com/LT-BACKEND/stunnelvp
 wget -q -O /usr/bin/running "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/running.sh" && chmod +x /usr/bin/running
 wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/restart.sh" && chmod +x /usr/bin/restart
 wget -q -O /usr/bin/menu-udp "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-udp.sh" && chmod +x /usr/bin/menu-udp
-echo -e "3 sec .. Create New Data Update script"
-sleep 3
+wget -q -O /usr/bin/menu-bot "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-bot.sh" && chmod +x /usr/bin/menu-bot
+#wget -qwget -q -O /usr/bin/menu-udp "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-udp.sh" && chmod +x /usr/bin/menu-udp
+echo -e "sleep 3 "
 clear
 echo -e "\e[32;1mSuccessfully\e[0m"
 sleep 2
