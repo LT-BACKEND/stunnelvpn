@@ -59,6 +59,7 @@ sudo apt install vnstat
 sudo apt insta squid
 wget -q -O https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/tools.sh && chmod +x tools.sh && ./tools.sh
 rm tools.sh
+RANDOMDOMAIN="https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/"
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[44;97;1m         DOMAIN FEATURES           $NC"
@@ -71,11 +72,14 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\e[44;93;1m        LUNATIC TUNNELING          $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo " "
-read -rp "  Just input : " -e pp
-    if [ -z $pp ]; then
-        echo -e "
-        Nothing input for domain!
-        Then a random domain will be created"
+read -p "Just Input 1 - 2 : " host 
+    if [[ $host == "1" ]]; then
+clear
+echo -e ""
+echo -e "\e[33;1m PASTIKAN DOMAIN SUDAH DI POINTING KE IPVPS\e[0m"
+echo -e ""
+read -p " Just Input Domain : " pp
+echo -e ""
     else
         echo "$pp" > /root/scdomain
 	echo "$pp" > /etc/xray/scdomain
@@ -84,8 +88,12 @@ read -rp "  Just input : " -e pp
 	echo $pp > /root/domain
         echo "IP=$pp" > /var/lib/scrz-prem/ipvps.conf
     fi
-
+    elif [[ $host == "2" ]]; then
 clear
+wget ${RANDOMDOMAIN}acakdomain.sh && chmod +x acakdomain.sh && ./acakdomain.sh
+else
+echo "Gagal"
+fi
 #install ssh ovpn
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green      Install SSH / WS / UDP              $NC"
