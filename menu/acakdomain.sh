@@ -6,7 +6,7 @@ clear
 apt install jq curl -y
 DOMAIN=inject.cloud
 sub=tunnel-$(</dev/urandom tr -dc a-z | head -c4)
-SUB_DOMAIN=${sub}.inject.cloud
+SUB_DOMAIN=${sub}.${DOMAIN}
 CF_ID=mezzqueen293@gmail.com
 CF_KEY=e03f30d53ad7ec2ab54327baa5e2da5ab44f0
 set -euo pipefail
