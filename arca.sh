@@ -87,7 +87,7 @@ cd wondershaper
 sudo make install
 
 wget -q -O /usr/bin/addudp "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/addssh.sh"
-wget -q -O /usr/bin/udp "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menush.sh"
+wget -q -O /usr/bin/menu-udp "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-udp.sh"
 
 sudo apt install squid -y
 mkdir /var/lib/ssnvpn-pro/
@@ -283,6 +283,7 @@ chmod +x /usr/bin/menu-ss
 chmod +x /usr/bin/updatsc
 chmod +x /usr/bin/thema
 chmod +x /usr/bin/menu-bot
+chmod +x /usr/bin/menu-udp
 chmod +x /usr/bin/stopbot
 #chmod +x /usr/bin/menu-socks
 chmod +x /usr/bin/menu-trojan
