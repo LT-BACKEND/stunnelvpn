@@ -27,6 +27,8 @@ wget -q -O /usr/bin/cek-speed "https://raw.githubusercontent.com/Agunxzzz/XrayCo
 wget -q -O /usr/bin/cek-bandwidth "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/cek-bandwidth.sh"
 wget -q -O /usr/bin/cek-ram "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/ram.sh"
 wget -q -O /usr/bin/limit-speed "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/limit-speed.sh"
+wget -q -O /usr/bin/menu-bot "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-bot.sh"
+wget -q -O /usr/bin/stopbot "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/stopbot.sh"
 
 # //
 wget -q -O /usr/bin/about "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/about.sh"
@@ -271,6 +273,9 @@ chmod +x /usr/bin/menu-vmess
 chmod +x /usr/bin/delvray
 chmod +x /usr/bin/menu-ss
 chmod +x /usr/bin/updatsc
+
+chmod +x /usr/bin/menu-bot
+chmod +x /usr/bin/stopbot
 #chmod +x /usr/bin/menu-socks
 chmod +x /usr/bin/menu-trojan
 #chmod +x /usr/bin/menu-trgo
