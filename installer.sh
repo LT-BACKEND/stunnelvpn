@@ -60,11 +60,18 @@ sudo apt insta squid
 wget -q -O https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/tools.sh && chmod +x tools.sh && ./tools.sh
 rm tools.sh
 clear
-
-clear
-echo "Add Domain for vmess/vless/trojan dll"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[44;97;1m         DOMAIN FEATURES           $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e ""
+echo -e "\e[37;1m [1]• JUST INPUT YOUR DOMAIN \e[0m"
+echo -e "\e[37;1m [2]• JUST INPUT RANDOM DOMAIN \e[0m"
+echo -e ""
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[44;93;1m        LUNATIC TUNNELING          $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo " "
-read -rp "Input ur domain : " -e pp
+read -rp "  Just input : " -e pp
     if [ -z $pp ]; then
         echo -e "
         Nothing input for domain!
