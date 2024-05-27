@@ -27,8 +27,12 @@ rm -rf about
 rm -rf upsc
 rm -rf running
 rm -rf menu-bot
+rm -rf menu-theme
+rm -rf thema
+rm -rf menu-themes
 # // Download Data Baru
 # // menu
+wget -q -O /usr/bin/menu-theme "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-theme.sh" && chmod +x /usr/bin/menu-theme
 wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu.sh" && chmod +x /usr/bin/menu
 wget -q -O /usr/bin/dashboard "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/dashboard.sh" && chmod +x /usr/bin/dashboard
 wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-ssh.sh" &&  chmod +x /usr/bin/menu-ssh
