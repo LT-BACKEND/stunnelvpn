@@ -213,9 +213,6 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 
 wget "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/Insshws/vpn.sh" && bash vpn.sh && rm vpn.sh
 clear
-echo "Installing Bot Panel" | lolcat
-echo "Siapkan Token bot dan ID telegram mu"
-rm -rf bot.sh && wget https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/botssh/bot.sh && chmod 777 bot.sh && ./bot.sh && systemctl restart cybervpn
 
 # pemberitahuan
 
@@ -288,8 +285,8 @@ rm -f senmenu.sh
 rm -f setupku.sh
 rm -f xraymode.sh
 rm -f installer.sh
-rm -rf demeling.sh
-rm -rf arca.sh
+rm -f demeling.sh
+rm -f arca.sh
 clear
 echo "------------------------------------------------------------"
 echo ""
