@@ -228,6 +228,11 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 wget "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/Insshws/vpn.sh" && bash vpn.sh && rm vpn.sh
 clear
 
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green     Install Ui Menu Dasboard          $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+
+wget -q -O /usr/bin/dashboard "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/dashboard.sh" && chmod +x /usr/bin/dashboard
 # pemberitahuan
 
 USERID=5970831071
