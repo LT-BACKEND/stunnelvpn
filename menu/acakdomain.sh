@@ -52,4 +52,5 @@ sleep 3
 domain=$(cat /root/domain)
 cp -r /root/domain /etc/xray/domain
 #read -n 1 -s -r -p "Press any key to back on genssl"
-genssl
+#genssl
+wget https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/nginx-ssl.sh && chmod +x nginx-ssl.sh && ./nginx-ssl.sh
