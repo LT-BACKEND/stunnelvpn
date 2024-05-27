@@ -48,9 +48,9 @@ wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/LT-BACKEND/stunnelvp
 wget -q -O /usr/bin/wbm "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/webmin.sh"
 wget -q -O /usr/bin/changer "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/changer.sh"
 #wget -q -O /usr/bin/xp "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/xp.sh"
-wget -q -O /usr/bin/addhost  "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/addhost.sh"
+wget -q -O /usr/bin/addhost  "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/addhost.sh"
 wget -q -O /usr/bin/genssl  "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/genssl.sh"
-wget -q -O /usr/bin/fix "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/cf.sh"
+wget -q -O /usr/bin/fix "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/cf.sh"
 #wget -q -O /usr/bin/update "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/update.sh"
 wget -q -O /etc/cyber.site "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/cyber.site"
 wget -q -O /root/versi "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/versiupdate"
@@ -62,7 +62,7 @@ wget -q -O /usr/bin/menu-ipsec "https://raw.githubusercontent.com/LT-BACKEND/stu
 wget https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/SLDNS/wslow.sh
 wget https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/backup/set-br.sh
 bash set-br.sh
-wget https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/Themes/thema.sh
+wget -q -O /usr/bin/thema "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/Themes/thema.sh"
 wget -q -O /usr/bin/trial "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/trial/trial.sh"
 wget -q -O /usr/bin/trial "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/trial/trial.sh" && chmod +x /usr/bin/trial
 wget -q -O /usr/bin/trial-vmess "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/trial/trial-vmess.sh" && chmod +x /usr/bin/trial-vmess
@@ -281,7 +281,7 @@ chmod +x /usr/bin/menu-vmess
 chmod +x /usr/bin/delvray
 chmod +x /usr/bin/menu-ss
 chmod +x /usr/bin/updatsc
-
+chmod +x /usr/bin/thema
 chmod +x /usr/bin/menu-bot
 chmod +x /usr/bin/stopbot
 #chmod +x /usr/bin/menu-socks
