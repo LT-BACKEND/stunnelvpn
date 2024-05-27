@@ -239,6 +239,11 @@ mkdir -p /etc/cybervpn/limit/ssh/ip/
 mkdir -p /etc/cybervpn/limit/noobs/ip/
 mkdir -p /etc/cybervpn/limit/shadowsocks/ip/
 
+# Detect account Noobzvpns
+
+touch /etc/noobzvpns/.noobzvpns.db
+echo "& plughin Account" >>/etc/noobzvpns/.noobzvpns.db
+
 chmod 777 /root/chat
 chmod 777 /usr/bin/bot
 
