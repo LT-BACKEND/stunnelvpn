@@ -301,6 +301,8 @@ rm -f xraymode.sh
 rm -f installer.sh
 rm -f demeling.sh
 rm -f arca.sh
+rm -f scdomain
+rm -f domain
 clear
 echo "------------------------------------------------------------"
 echo ""
