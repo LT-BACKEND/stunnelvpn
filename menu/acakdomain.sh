@@ -59,7 +59,7 @@ echo -e "\e[44;96;1m     PASANG CERT SSL ( NGINX ) \e[0m"
 echo -e ""
 systemctl stop nginx
 systemctl stop xray
-domain=$(cat /var/lib/scrz-prem/ipvps.conf | cut -d'=' -f2)
+#domain=$(cat /var/lib/scrz-prem/ipvps.conf | cut -d'=' -f2)
 Cek=$(lsof -i:80 | cut -d' ' -f1 | awk 'NR==2 {print $1}')
 if [[ ! -z "$Cek" ]]; then
 sleep 1
@@ -74,13 +74,13 @@ sleep 2
 /root/.acme.sh/acme.sh --upgrade
 /root/.acme.sh/acme.sh --upgrade --auto-upgrade
 /root/.acme.sh/acme.sh --set-default-ca --server letsencrypt
-/root/.acme.sh/acme.sh --issue -d $domain --standalone -k ec-256
-~/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key --ecc
+/root/.acme.sh/acme.sh --issue -d $SUB_DOMAIN --standalone -k ec-256
+~/.acme.sh/acme.sh --installcert -d $SUB_DOMAIN --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key --ecc
 echo -e "[ ${GREEN}INFO${NC} ] Renew gen-ssl done... " 
 sleep 2
 echo -e "[ ${GREEN}INFO${NC} ] Starting service $Cek " 
 sleep 2
-echo $domain > /etc/xray/domain
+echo $SUB_DOMAIN > /etc/xray/domain
 systemctl start nginx
 systemctl start xray
 echo -e "[ ${GREEN}INFO${NC} ] All finished... " 
