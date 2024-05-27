@@ -54,7 +54,7 @@ case $opt in
 08 | 8) clear ; menu-ipsec ;;
 09 | 9) clear ; menu-trial ;;
 10) clear ; menu-backup ;;
-11) clear ; panelbot ;;
+11) clear ; menu-bot ;;
 12) clear ; bash /root/chat ;; # ganti chatid tele
 13) clear ; curl "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/udp/udp-custom.sh" | bash ;;
 14) clear ; running ;;
