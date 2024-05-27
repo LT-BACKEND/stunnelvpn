@@ -73,14 +73,13 @@ echo -e "\e[44;93;1m        LUNATIC TUNNELING          $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo " "
 read -p "Just Input 1 - 2 : " host 
-if [[ $host == "1" ]]; then
-clear
-echo -e ""
+if [ $host = 1 ] || [ $host = 1 ]
+then
 echo -e "\e[33;1m PASTIKAN DOMAIN SUDAH DI POINTING KE IPVPS\e[0m"
 echo -e ""
+clear
 read -p " Just Input Domain : " pp
-echo -e ""
-else
+#else
 echo "$pp" > /root/scdomain
 echo "$pp" > /etc/xray/scdomain
 echo "$pp" > /etc/xray/domain
@@ -88,10 +87,12 @@ echo "$pp" > /etc/v2ray/domain
 echo $pp > /root/domain
 echo "IP=$pp" > /var/lib/scrz-prem/ipvps.conf
 fi
-elif [[ $host == "2" ]]; then
-    clear
-    wget ${RANDOMDOMAIN}acakdomain.sh && chmod +x acakdomain.sh && ./acakdomain.sh
+# // domain random
+if [ $host = 2 ] || [ $host = 2 ]
+then
+wget ${RANDOMDOMAIN}acakdomain.sh && chmod +x acakdomain.sh && ./acakdomain.sh
 fi
+
 #install ssh ovpn
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green      Install SSH / WS / UDP              $NC"
