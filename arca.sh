@@ -49,7 +49,7 @@ wget -q -O /usr/bin/wbm "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main
 wget -q -O /usr/bin/changer "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/changer.sh"
 #wget -q -O /usr/bin/xp "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/xp.sh"
 wget -q -O /usr/bin/addhost  "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/addhost.sh"
-wget -q -O /usr/bin/genssl  "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/genssl.sh"
+wget -q -O /usr/bin/genssl  "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/genssl.sh"
 wget -q -O /usr/bin/fix "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/cf.sh"
 #wget -q -O /usr/bin/update "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/update.sh"
 wget -q -O /etc/cyber.site "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/cyber.site"
