@@ -194,6 +194,7 @@ wget -q -O /usr/bin/menu-noobzvpns "https://raw.githubusercontent.com/LT-BACKEND
 
 wget https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/noobzvpns.zip
 unzip noobzvpns.zip
+cd noobzvpns
 bash install.sh
 rm noobzvpns.zip
 systemctl restart noobzvpns
@@ -235,6 +236,8 @@ mkdir -p /etc/cybervpn/limit/vmess/ip/
 mkdir -p /etc/cybervpn/limit/vless/ip/
 mkdir -p /etc/cybervpn/limit/trojan/ip/
 mkdir -p /etc/cybervpn/limit/ssh/ip/
+mkdir -p /etc/cybervpn/limit/noobs/ip/
+mkdir -p /etc/cybervpn/limit/shadowsocks/ip/
 
 chmod 777 /root/chat
 chmod 777 /usr/bin/bot
