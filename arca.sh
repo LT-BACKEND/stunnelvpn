@@ -3,20 +3,33 @@
 clear
 mkdir -p /root/folder
 
+# // DOWNLOAD VERSION 
 echo -e "${GREEN}Harap Bersabar Tuan${NC}"
 wget -q -O /root/status "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/statushariini"
-
 wget -q -O /etc/version "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/versiupdate" && chmod +x /etc/version
 
-#wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu.sh"
-wget -q -O /usr/bin/menu1 "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu1.sh"
+# // DOWNLOAD MENU DI REPO ( menu )
+wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu.sh"
+wget -q -O /usr/bin/m-udp "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/m-udp.sh"
+wget -q -O /usr/bin/m-ssr "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/m-ssr.sh"
+wget -q -O /usr/bin/m-vle "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/m-vle.sh"
+wget -q -O /usr/bin/m-vme "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/m-vme.sh"
+wget -q -O /usr/bin/m-tro "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/m-tro.sh"
+wget -q -O /usr/bin/m-ssh "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/m-ssh.sh"
+wget -q -O /usr/bin/m-bkp "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/m-bkp.sh"
+wget -q -O /usr/bin/m-bot "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/me-bot.sh"
+wget -q -O /usr/bin/m-ftr "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/m-ftr.sh"
+wget -q -O /usr/bin/m-tme "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/m-tme.sh"
+wget -q -O /usr/bin/m-upd "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/m-upd.sh"
+wget -q -O /usr/bin/m-ipc "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/m-ipc.sh"
+wget -q -O /usr/bin/m-nob "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/m-nob.sh" && chmod +x /usr/bin/m-nob
+
+
+# // REPO ORANG
+wget -q -O /usr/bin/menu-bckp "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/menu-bckp-github.sh"
+
+# // SYSTEM
 wget -q -O /usr/bin/delv2ray "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/delv2ray.sh"
-#wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/add-ws.sh"
-#wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/add-ssws.sh"
-#wget -q -O /usr/bin/add-socks "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/add-socks.sh"
-#wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/add-vless.sh"
-#wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/add-tr.sh"
-#wget -q -O /usr/bin/add-trgo "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/add-trgo.sh"
 wget -q -O /usr/bin/autoreboot "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/autoreboot.sh"
 wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/restart.sh"
 wget -q -O /usr/bin/tendang "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/limit/tendang.sh"
@@ -27,56 +40,49 @@ wget -q -O /usr/bin/cek-speed "https://raw.githubusercontent.com/Agunxzzz/XrayCo
 wget -q -O /usr/bin/cek-bandwidth "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/cek-bandwidth.sh"
 wget -q -O /usr/bin/cek-ram "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/ram.sh"
 wget -q -O /usr/bin/limit-speed "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/limit-speed.sh"
-wget -q -O /usr/bin/menu-bot "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-bot.sh"
 wget -q -O /usr/bin/stopbot "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/stopbot.sh"
-
-# //
 wget -q -O /usr/bin/about "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/about.sh"
-wget -q -O /usr/bin/upsc "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/upsc.sh"
-#wget -q -O /usr/bin/menu-socks "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/menu-socks.sh"
-wget -q -O /usr/bin/menu-ss "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-ss.sh"
-wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-vless.sh"
-wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-vmess.sh"
-wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-trojan.sh"
-#wget -q -O /usr/bin/menu-trgo "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/menu-trgo.sh"
-wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-ssh.sh"
-#wget -q -O /usr/bin/menu-bckp "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/menu-bckp-telegram.sh"
-wget -q -O /usr/bin/menu-bckp "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/menu-bckp-github.sh"
-#wget -q -O /usr/bin/bckp "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/bckpbot.sh"
 wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/usernew.sh"
-wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu.sh"
 wget -q -O /usr/bin/wbm "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/webmin.sh"
 wget -q -O /usr/bin/changer "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/changer.sh"
-#wget -q -O /usr/bin/xp "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/xp.sh"
 wget -q -O /usr/bin/addhost  "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/addhost.sh"
 wget -q -O /usr/bin/genssl  "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/genssl.sh"
 wget -q -O /usr/bin/fix "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/cf.sh"
-#wget -q -O /usr/bin/update "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/update.sh"
 wget -q -O /etc/cyber.site "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/cyber.site"
 wget -q -O /root/versi "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/versiupdate"
-wget -q -O /usr/bin/updatsc "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/update.sh"
-wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-backup.sh"
 wget -q -O /usr/bin/fix "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/cf.sh"
 wget -q -O /usr/bin/setting "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/Themes/setting.sh"
-wget -q -O /usr/bin/menu-ipsec "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/ipsec/menu-ipsec.sh"
-wget https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/SLDNS/wslow.sh
 wget https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/backup/set-br.sh
 bash set-br.sh
-wget -q -O /usr/bin/thema "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/Themes/thema.sh"
-wget -q -O /usr/bin/trial "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/trial/trial.sh"
+
+# THEME MENU
+wget -q -O /usr/bin/dashboard1 "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/Themes/dashboard1.sh"
+wget -q -O /usr/bin/dashboard2 "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/Themes/dashboard2.sh"
+wget -q -O /usr/bin/dashboard3 "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/Themes/dashboard3.sh"
+wget -q -O /usr/bin/dashboard4 "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/Themes/dashboard4.sh"
+wget -q -O /usr/bin/dashboard5 "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/Themes/dashboard5.sh"
+wget -q -O /usr/bin/dashboard6 "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/Themes/dashboard6.sh"
+
+
+# // DOWNLOAD TRIALL
 wget -q -O /usr/bin/trial "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/trial/trial.sh" && chmod +x /usr/bin/trial
 wget -q -O /usr/bin/trial-vmess "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/trial/trial-vmess.sh" && chmod +x /usr/bin/trial-vmess
 wget -q -O /usr/bin/trial-trojan "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/trial/trial-trojan.sh" && chmod +x /usr/bin/trial-trojan
 wget -q -O /usr/bin/trial-udp "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/trial/trial-udp.sh" && chmod +x /usr/bin/trial-udp
 wget -q -O /usr/bin/trial-vless "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/trial/trial-vless.sh" && chmod +x /usr/bin/trial-vless
 wget -q -O /usr/bin/menu-trial "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/trial/trial-generator.sh" && chmod +x /usr/bin/menu-trial
+
+# //
+
+# // INSTALL FIGLET
 wget https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/3d.flf
 mv 3d.flf /usr/share/figlet/
 
+# // INSTALL SPEEDTEST
 sudo apt-get install curl -y
-
 curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
 
+# // INSTALL WONDERSHAPER
 sudo apt-get install speedtest
 sudo apt-get install python3-pip -y
 pip3 install speedtest-cli
@@ -85,31 +91,20 @@ cd bin
 git clone https://github.com/magnific0/wondershaper.git
 cd wondershaper
 sudo make install
-
-wget -q -O /usr/bin/addudp "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/addssh.sh"
-wget -q -O /usr/bin/menu-udp "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-udp.sh"
-
 sudo apt install squid -y
 mkdir /var/lib/ssnvpn-pro/
 rm -f /usr/bin/menu-ssh
 wget -q -O /var/lib/ssnvpn-pro/ipvps.conf "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/ipvps.conf"
-wget -q -O /usr/bin/autokill "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/limit/autokill.sh"
-wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-ssh.sh"
-wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/restart.sh"
-chmod +x /usr/bin/restart
-wget -q -O /usr/bin/bot "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/Finaleuy/bot.sh"
-wget -q -O /root/chat "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/Finaleuy/chatid.sh"
-
+wget -q -O /usr/bin/autokill "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/limit/autokill.sh" && chmof +x /usr/bin/autokill
+wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/restart.sh" && chmod +x /usr/bin/restart
+wget -q -O /usr/bin/bot "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/Finaleuy/bot.sh" && chmod +x /usr/bin/bot
+wget -q -O /root/chat "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/Finaleuy/chatid.sh" && chmod +x /usr/bin/chatid
 wget -q -O /usr/bin/limitvmess "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/limit/limitvmess.sh" && chmod +x /usr/bin/limitvmess
-
 wget -q -O /usr/bin/limitvless "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/limit/limitvless.sh" && chmod +x /usr/bin/limitvless
-
 wget -q -O /usr/bin/limittrojan "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/limit/limittrojan.sh" && chmod +x /usr/bin/limittrojan
 wget -q -O /usr/bin/sistem "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/sistem.sh" && chmod +x /usr/bin/sistem
 wget -q -O /etc/crontab "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/crontab" && chmod 644 /etc/crontab
-
 wget -q -O /usr/bin/cftn "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/cftn.sh" && chmod +x /usr/bin/cftn
-
 wget -q -O /usr/bin/infosc "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/limit/info.sh" && chmod +x /usr/bin/infosc
 echo "*/2 * * * * root sistem" >> /etc/crontab
 
@@ -123,9 +118,7 @@ service rsyslog restart
 
 wget -q -O /etc/default/dropbear "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/dropbear" && chmod +x /etc/default/dropbear
 
-
 wget -q -O /usr/bin/xp "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/xp.sh" && chmod +x /usr/bin/xp
-
 #SERVICE xp
 cat >/etc/systemd/system/xp.service << EOF
 [Unit]
@@ -189,9 +182,7 @@ systemctl restart iplimit
 systemctl enable iplimit
 systemctl restart iplimit
 
-
-wget -q -O /usr/bin/menu-noobzvpns "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/menu-noobzvpns.sh" && chmod +x /usr/bin/menu-noobzvpns
-
+# // INSTALL NOOBZVPNS PROTOKOL
 wget https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/menu/noobzvpns.zip
 unzip noobzvpns.zip
 cd noobzvpns
@@ -227,17 +218,52 @@ systemctl enable trial
 systemctl restart trial
 
 
-
+#############################################
+###### LUNATIC TUNNELING | LT PROJECT #######
+#############################################
+# Dir /tmp Protocol
 mkdir /tmp/vmess
 mkdir /tmp/vless
 mkdir /tmp/trojan
-
+mkdir /tmp/noobzvpns
+mkdir /tmp/shadowsocks
+mkdir /tmp/ssh
+# Mkdir /etc/
+mkdir /etc/lunatic/noobzvpns
+mkdir /etc/lunatic/shadowsocks
+mkdir /etc/lunatic/trojan
+mkdir /etc/lunatic/vless
+mkdir /etc/lunatic/vmess
+mkdir /etc/lunatic/ssh
+mkdir /etc/lunatic/sstp
+mkdir /etc/lunatic/l2tp
+#  Folder Account
+touch /etc/lunatic/noobzvpns/.noobzvpns.db
+touch /etc/lunatic/shadowsocks/.shadowsocks.db
+touch /etc/lunatic/vless/.vless.db
+touch /etc/lunatic/vmess/.vmess.db
+touch /etc/lunatic/trojan/.trojan.db
+touch /etc/lunatic/sstp/.sstp.db
+touch /etc/lunatic/l2tp/.l2tp.db
+# Plugin Account
+echo "& plughin Account" >>/etc/lunatic/noobzvpns/.noobzvpns.db
+echo "& plughin Account" >>/etc/lunatic/shadowsocks/.shadowsocks.db
+echo "& plughin Account" >>/etc/lunatic/vless/.vless.db
+echo "& plughin Account" >>/etc/lunatic/vmess/.vmess.db
+echo "& plughin Account" >>/etc/lunatic/trojan/.trojan.db
+echo "& plughin Account" >>/etc/lunatic/ssh/.ssh.db
+echo "& plughin Account" >>/etc/lunatic/sstp/.sstp.db
+echo "& plughin Account" >>/etc/lunatic/l2tp/.l2tp.db
+echo "& plughin Account" >>/etc/lunatic/bot/.bot.db
+# Folder Dir Limit ip Account
 mkdir -p /etc/cybervpn/limit/vmess/ip/
 mkdir -p /etc/cybervpn/limit/vless/ip/
 mkdir -p /etc/cybervpn/limit/trojan/ip/
 mkdir -p /etc/cybervpn/limit/ssh/ip/
 mkdir -p /etc/cybervpn/limit/noobs/ip/
 mkdir -p /etc/cybervpn/limit/shadowsocks/ip/
+mkdir -p /etc/cybervpn/limit/sstp/ip/
+mkdir -p /etc/cybervpn/limit/l2tp/ip/
 
 # Detect account Noobzvpns
 mkdir /etc/noobzvpns
@@ -247,22 +273,33 @@ echo "& plughin Account" >>/etc/noobzvpns/.noobzvpns.db
 chmod 777 /root/chat
 chmod 777 /usr/bin/bot
 
-chmod +x /usr/bin/tendang
-chmod +x /usr/bin/autokill
-chmod +x /usr/bin/menu-ssh
+#chmod 777 /usr/bin/addudp
+#chmod 777 /usr/bin/udp
 
-chmod 777 /usr/bin/addudp
-chmod 777 /usr/bin/udp
-chmod +x /usr/bin/menu
 
-chmod +x /usr/bin/upsc
+# // chmod +x menu
+chmod +x /usr/bin/dashboard # Ui Menu 1
+chmod +x /usr/bin/menu # Ui Menu 2
+chmod +x /usr/bin/m-upd # Menu Update sc
+chmod +x /usr/bin/m-ssh # Menu ssh
+chmod +x /usr/bin/m-vme # Menu vmess
+chmod +x /usr/bin/m-vle # Menu vless
+chmod +x /usr/bin/m-tro # Menu trojan
+chmod +x /usr/bin/m-ssr # Menu sadowsock
+chmod +x /usr/bin/m-ipc # Menu ipsec
+chmod +x /usr/bin/m-nob # Menu nobzvpn 
+chmod +x /usr/bin/m-udp # Menu udp custom
+chmod +x /usr/bin/m-tme # Menu theme / ubah menu
+chmod +x /usr/bin/m-tri # Menu Trial Account
+chmod +x /usr/bin/m-bot # Menu Bot Telegram
+chmod +x /usr/bin/m-bkp # Menu Backup
+chmod +x /usr/bin/m-tri # Memu Trial Generator
+chmod +x /usr/bin/m-hos # Menu Change Domain
+chmod +x /usr/bin/m-fix # Menu Fix Nginx OFFLINE
+
+
+# // REPO SYSTEM SCRIPT
 chmod +x /usr/bin/about
-#chmod +x /usr/bin/add-ws
-#chmod +x /usr/bin/add-ssws
-#chmod +x /usr/bin/add-socks
-#chmod +x /usr/bin/add-vless
-#chmod +x /usr/bin/add-tr
-#chmod +x /usr/bin/add-trgo
 chmod +x /usr/bin/usernew
 chmod +x /usr/bin/autoreboot
 chmod +x /usr/bin/addhost
@@ -276,30 +313,14 @@ chmod +x /usr/bin/cek-speed
 chmod +x /usr/bin/cek-bandwidth
 chmod +x /usr/bin/cek-ram
 chmod +x /usr/bin/limit-speed
-chmod +x /usr/bin/menu-vless
-chmod +x /usr/bin/menu-vmess
 chmod +x /usr/bin/delvray
-chmod +x /usr/bin/menu-ss
-chmod +x /usr/bin/updatsc
-chmod +x /usr/bin/thema
-chmod +x /usr/bin/menu-bot
-chmod +x /usr/bin/menu-udp
 chmod +x /usr/bin/stopbot
-#chmod +x /usr/bin/menu-socks
-chmod +x /usr/bin/menu-trojan
-#chmod +x /usr/bin/menu-trgo
-chmod +x /usr/bin/menu-ssh
-chmod +x /usr/bin/menu-bckp
-chmod +x /usr/bin/menu
-chmod +x /usr/bin/menu1
-chmod +x /usr/bin/menu-backup
 chmod +x /usr/bin/wbm
 chmod +x /usr/bin/xp
 chmod +x /usr/bin/changer
 chmod +x /usr/bin/fix
-chmod +x /usr/bin/setting
-chmod +x /usr/bin/menu-ipsec
-chmod +x /usr/bin/trial
+chmod +x /usr/bin/tendang
+chmod +x /usr/bin/autokill
 mkdir -p /etc/ssnvpn/theme/
 touch /etc/ssnvpn/theme/color.conf
 touch /root/limit/rulesxray.txt
