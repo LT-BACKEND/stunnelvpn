@@ -36,11 +36,59 @@ rm nsdomain
 clear
 #figlet "slowdns" | lolcat
 #read -rp "Masukkan Nameserver: " -e sub
-sub=ns.`(</dev/urandom tr -dc a-z0-9 | head -c5)`
+#sub=ns.`(</dev/urandom tr -dc a-z0-9 | head -c5)`
 #sub=ns.`</dev/urandom tr -dc x-z0-9 | head -c4`
-SUB_DOMAIN=${sub}.inject.cloud
-NS_DOMAIN=${SUB_DOMAIN}
-echo $NS_DOMAIN > /root/nsdomain
+#SUB_DOMAIN=${sub}.inject.cloud
+#NS_DOMAIN=${SUB_DOMAIN}
+#echo $NS_DOMAIN > /root/nsdomain
+#REPOS="https://github.com/JurigVPN/scupdate/raw/jurig/"
+ns_domain_cloudflare() {
+	DOMAIN="slowdns.cfd"
+	DOMAIN_PATH=$(cat /etc/xray/domain)
+	SUB=$(tr </dev/urandom -dc a-z0-9 | head -c7)
+	SUB_DOMAIN=${SUB}."slowdns.cfd"
+	NS_DOMAIN=dns.${SUB_DOMAIN}
+	CF_ID=muhamadhaisyamkhairizmi@gmail.com
+        CF_KEY=1bd1fdfcd2df775f9768e5601d539538dcf2d
+	set -euo pipefail
+	IP=$(wget -qO- ipinfo.io/ip)
+	echo "Updating DNS NS for ${NS_DOMAIN}..."
+	ZONE=$(
+		curl -sLX GET "https://api.cloudflare.com/client/v4/zones?name=${DOMAIN}&status=active" \
+		-H "X-Auth-Email: ${CF_ID}" \
+		-H "X-Auth-Key: ${CF_KEY}" \
+		-H "Content-Type: application/json" | jq -r .result[0].id
+	)
+
+	RECORD=$(
+		curl -sLX GET "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_records?name=${NS_DOMAIN}" \
+		-H "X-Auth-Email: ${CF_ID}" \
+		-H "X-Auth-Key: ${CF_KEY}" \
+		-H "Content-Type: application/json" | jq -r .result[0].id
+	)
+
+	if [[ "${#RECORD}" -le 10 ]]; then
+		RECORD=$(
+			curl -sLX POST "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_records" \
+			-H "X-Auth-Email: ${CF_ID}" \
+			-H "X-Auth-Key: ${CF_KEY}" \
+			-H "Content-Type: application/json" \
+			--data '{"type":"NS","name":"'${NS_DOMAIN}'","content":"'${DOMAIN_PATH}'","proxied":false}' | jq -r .result.id
+		)
+	fi
+
+	RESULT=$(
+		curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_records/${RECORD}" \
+		-H "X-Auth-Email: ${CF_ID}" \
+		-H "X-Auth-Key: ${CF_KEY}" \
+		-H "Content-Type: application/json" \
+		--data '{"type":"NS","name":"'${NS_DOMAIN}'","content":"'${DOMAIN_PATH}'","proxied":false}'
+	)
+	echo $NS_DOMAIN >/etc/xray/dns
+}
+
+# exekusi
+ns_domain_cloudflare
 
 nameserver=$(cat /root/nsdomain)
 apt update -y
